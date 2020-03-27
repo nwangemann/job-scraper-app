@@ -1,55 +1,58 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import axios from 'axios'
 import {submitUser, switchToRegister } from '../../redux/reducer'
-import { connect } from 'react-redux'
+import { useDispatch } from 'react-redux'
+import {useHistory} from 'react-router-dom'
 
- class Login extends Component {
-     constructor(props){
-         super(props)
-         this.state = {
-             email: '', 
-             password: '',
-             loggedInFailed: false
-         }
-     }
+ function Login()  {
 
-    login = (email, password) => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [loggedInFailed, setLoggedInFailed] = useState(false);
+
+    const dispatch = useDispatch();
+
+    const history = useHistory();
+
+    function loginSubmit(email, password){
         let body = { email, password}
         axios.post('/auth/login', body)
         .then( res => {
-            this.props.submitUser(res.data);
-            this.props.history.push('/')
+            dispatch(submitUser(res.data));
+            history.push('/')
         }).catch(err => {
-            this.setState({
-                loggedInFailed: true
-            })
+            setLoggedInFailed(true)
         })
     }
-    render() {
+   
         return (
             <div>
                 This is the login component
                 <form onSubmit={e => {
                     e.preventDefault();
-                    this.login(this.state.email, this.state.password)
+                    loginSubmit(email, password)
                 }}>
-                    <input type="text" name="email" value={this.state.email} placeholder="Email"></input>
-                    <input type="text" name="password" value={this.state.password} placeholder="Password"></input>
+                    <input onChange={e => setEmail(e.target.value)}type="text" name="email" placeholder="Email"></input>
+                    <input onChange={e => setPassword(e.target.value)} type="text" name="password" placeholder="Password"></input>
+
+                    {
+                        loggedInFailed
+                        ?
+                        <p>Incorrect Email and/or Password</p>
+                        :
+                        null
+                    }
+
                     <input type="submit" placeholder="Login" value="login"/>
                     
                 
                 </form>
                 <button
-                onClick={this.props.switchToRegister}
+                onClick={() => dispatch(switchToRegister())}
                 >Switch to register</button>
             </div>
         )
     }
-}
-const mapStateToProps = state => state;
 
-const mapDispatchToProps = {
-    submitUser,
-    switchToRegister
-}
-export default connect(mapStateToProps, mapDispatchToProps)(Login)
+
+export default Login

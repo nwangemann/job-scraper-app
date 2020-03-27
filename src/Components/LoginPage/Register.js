@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom'
 import axios from 'axios'
 import {submitUser, switchToLogin} from '../../redux/reducer'
 
-export default function Register (){
+function Register (){
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [registerFail, setRegisterFail] = useState(false)
@@ -18,7 +18,7 @@ export default function Register (){
     // useSelector is the way to bring state from redux into the local state with hooks. for example, const user = useSelector(state => state.user)    this brings in the state from redux and makes it available to use. We aren't using it right now for this component. 
 
 
-    function register(email, password){
+    function registerSubmit(email, password){
         let body = {
             email: email,
             password: password
@@ -41,7 +41,7 @@ export default function Register (){
               This is the register component
                <form onSubmit={e => {
                     e.preventDefault();
-                    register(email, password)
+                    registerSubmit(email, password)
                 }}>
                     <input type="text" name="email" onChange={e => setEmail(e.target.value)} placeholder="Email"></input>
                     <input type="text" name="password" onChange={e => setPassword(e.target.value)} placeholder="Password"></input>
@@ -61,4 +61,4 @@ export default function Register (){
     )
 }
 
-
+export default Register
