@@ -51,7 +51,7 @@ export default function Register (){
                         :
                         null
                     }
-                    <input type="submit" placeholder="Register" value="login"/>
+                    <input type="submit" placeholder="Register" value="Register"/>
                 
                 </form>
                 <button
