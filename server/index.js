@@ -5,6 +5,7 @@ const session = require('express-session');
 const app = express();
 
 const {SERVER_PORT, SESSION_SECRET, CONNECTION_STRING} = process.env
+const {login, registerUser, logout, userSession} = require('./controller/authCtrl')
 
 app.use(express.json());
 
@@ -23,7 +24,10 @@ app.use(session({
 }));
 
 // authCtrl EndPoints
-
+app.post('/auth/login', login);
+app.post('/auth/register', registerUser);
+app.get('/auth/userSession', userSession);
+app.get('/auth/logout', logout);
 
 // listingCtrl Endpoints
 
