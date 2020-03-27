@@ -1,12 +1,29 @@
 import axios from "axios";
 
 let initialState = {
-  user: {}
+  user: {},
+  loginView: true
 };
 
+const SWITCH_TO_LOGIN = "SWITCH_TO_LOGIN"
+const SWITCH_TO_REGISTER = "SWITCH_TO_REGISTER"
 const SUBMIT_USER = "SUBMIT_USER";
 const GET_SESSION = "GET_SESSION";
 const LOGOUT = "LOGOUT";
+
+export function switchToLogin(){
+    return {
+        type: SWITCH_TO_LOGIN,
+        payload: ''
+    }
+}
+
+export function switchToRegister(){
+    return {
+        type: SWITCH_TO_REGISTER,
+        payload: ''
+    }
+}
 
 export function submitUser(user) {
   return {
@@ -33,6 +50,10 @@ export function logout() {
 
 export default function reducer(state = initialState, action) {
   switch (action.type) {
+    case SWITCH_TO_LOGIN:
+        return { ...state, loginView: true }
+    case SWITCH_TO_REGISTER:
+        return { ...state, loginView: false }
     case LOGOUT:
       return { ...state, user: {} };
     case SUBMIT_USER:

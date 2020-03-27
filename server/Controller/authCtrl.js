@@ -13,7 +13,7 @@ module.exports = {
         .catch(err => console.log(err));
       if (matchPasswords) {
         req.session.user = {
-          username: foundUser[0].username,
+          email: foundUser[0].email,
           user_id: foundUser[0].user_id
         };
         res.status(200).send(req.session.user);
@@ -24,7 +24,7 @@ module.exports = {
   },
   registerUser: async (req, res, next) => {
     const db = req.app.get("db");
-    const { username, password, email } = req.body;
+    const { password, email } = req.body;
     const foundUser = await db.find_user(email);
     if (foundUser.length) {
       res
@@ -36,7 +36,7 @@ module.exports = {
       const saltRounds = 12;
       bcrypt.genSalt(saltRounds).then(salt => {
         bcrypt.hash(password, salt).then(hashedPassword => {
-          db.register_user([username, email, hashedPassword]).then(([user]) => {
+          db.register_user([ email, hashedPassword]).then(([user]) => {
             req.session.user = user;
             res.status(200).send(req.session.user);
           });

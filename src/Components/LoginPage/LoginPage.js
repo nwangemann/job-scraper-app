@@ -1,16 +1,20 @@
-import React, { Component } from 'react'
-import Login from './login'
+import React from 'react'
+import { useSelector } from "react-redux";
+import Login from './Login'
+import Register from './Register'
 
- class LoginPage extends Component {
-    render() {
+export default function LoginPage (){
+    const loginView = useSelector(state => state.loginView)
         return (
             <div>
-                This is the Login Page
-                <Login/>
-
+                {
+                    loginView 
+                    ?
+                    <Login />
+                    :
+                    <Register /> 
+                }
             </div>
         )
-    }
 }
 
-export default LoginPage

@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import {submitUser} from '../../redux/reducer'
+import {submitUser, switchToRegister } from '../../redux/reducer'
 import { connect } from 'react-redux'
 
- class login extends Component {
+ class Login extends Component {
      constructor(props){
          super(props)
          this.state = {
@@ -28,17 +28,20 @@ import { connect } from 'react-redux'
     render() {
         return (
             <div>
+                This is the login component
                 <form onSubmit={e => {
                     e.preventDefault();
                     this.login(this.state.email, this.state.password)
                 }}>
                     <input type="text" name="email" value={this.state.email} placeholder="Email"></input>
                     <input type="text" name="password" value={this.state.password} placeholder="Password"></input>
-                    <input type="submit" value="login"/>
+                    <input type="submit" placeholder="Login" value="login"/>
                     
                 
                 </form>
-                
+                <button
+                onClick={this.props.switchToRegister}
+                >Switch to register</button>
             </div>
         )
     }
@@ -46,6 +49,7 @@ import { connect } from 'react-redux'
 const mapStateToProps = state => state;
 
 const mapDispatchToProps = {
-    submitUser
+    submitUser,
+    switchToRegister
 }
-export default connect(mapStateToProps, mapDispatchToProps)(login)
+export default connect(mapStateToProps, mapDispatchToProps)(Login)
