@@ -155,7 +155,7 @@ Unit Testing
 
 6. We will create a test to validate whether a delete function for saved job listings correctly identifies the listing and sends it to the back end to be deleted
 - pulls job_id to send to the back in
-- user_id to send to the back in
+- user_id to send to the back in.
 
 
 
