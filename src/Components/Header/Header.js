@@ -1,19 +1,28 @@
-import React, { Component } from "react";
+import React from "react";
+import {useSelector} from 'react-redux'
 import "./Header.css";
 import { Link } from "react-router-dom";
+import SubHeader from './SubHeader'
 
-class Header extends Component {
-  render() {
+function Header(){
+  const isLoggedIn = useSelector(state => state.isLoggedIn)
+  
     return (
       <header>
         <Link className="links" to="/">Job Scraper</Link>
-        <ul>
-          <Link className="links" to="/account">Account</Link>
-          <Link className="links" to="/saved_jobs">Saved</Link>
-          <Link className="links" to="login">Login</Link>
-        </ul>
+       
+          
+        <div>
+          {
+            isLoggedIn
+            ?
+            <SubHeader/>
+            :
+            <Link className="links" to="login">Login</Link>
+          }
+        </div>
+        
       </header>
     );
-  }
 }
 export default Header;

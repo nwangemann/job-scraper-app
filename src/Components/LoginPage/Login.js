@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-import {submitUser, switchToRegister } from '../../redux/reducer'
+import {submitUser, switchToRegister, loggedIn } from '../../redux/reducer'
 import { useDispatch } from 'react-redux'
 import {useHistory} from 'react-router-dom'
 
@@ -9,6 +9,7 @@ import {useHistory} from 'react-router-dom'
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [loggedInFailed, setLoggedInFailed] = useState(false);
+
 
     const dispatch = useDispatch();
 
@@ -19,6 +20,7 @@ import {useHistory} from 'react-router-dom'
         axios.post('/auth/login', body)
         .then( res => {
             dispatch(submitUser(res.data));
+            dispatch(loggedIn());
             history.push('/')
         }).catch(err => {
             setLoggedInFailed(true)

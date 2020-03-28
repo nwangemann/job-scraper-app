@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch } from "react-redux";
 import { useHistory } from 'react-router-dom'
 import axios from 'axios'
-import {submitUser, switchToLogin} from '../../redux/reducer'
+import {submitUser, switchToLogin, loggedIn} from '../../redux/reducer'
 
 function Register (){
     const [email, setEmail] = useState('')
@@ -28,6 +28,7 @@ function Register (){
   
         axios.post('/auth/register', body).then(res => {
             dispatch(submitUser(res.data));
+            dispatch(loggedIn());
             history.push("/");
           })
           .catch(err => {
