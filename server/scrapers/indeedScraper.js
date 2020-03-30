@@ -5,6 +5,7 @@ const Nightmare = require('nightmare');
 
 const nightmare = Nightmare({ show: true })
 const url = 'https://www.indeed.com'
+let theData = []
 
 nightmare
     .goto(url)
@@ -18,6 +19,7 @@ nightmare
     .evaluate(() => document.querySelector('body').innerHTML)
     .end()
     .then(response => {
+        theData.push(getData(response))
         console.log(getData(response));
     }).catch(err => {
         console.log(err);
@@ -48,6 +50,9 @@ let getData = html => {
             })
         }
     })
-    console.log('data', data)
     return data
+}
+
+module.exports = {
+    theData: theData
 }

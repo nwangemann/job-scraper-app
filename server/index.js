@@ -3,6 +3,7 @@ const express = require('express');
 const massive = require('massive');
 const session = require('express-session');
 const app = express();
+const {sendScrape} = require('./Controller/scraperCtrl')
 
 const {SERVER_PORT, SESSION_SECRET, CONNECTION_STRING} = process.env
 const {login, registerUser, logout, userSession} = require('./controller/authCtrl')
@@ -33,5 +34,6 @@ app.get('/auth/logout', logout);
 
 
 // scraperCtrl Endpoints
+app.get('/api/scrape', sendScrape);
 
 app.listen(SERVER_PORT, () => console.log(`Running on Server Port ${SERVER_PORT}`));
