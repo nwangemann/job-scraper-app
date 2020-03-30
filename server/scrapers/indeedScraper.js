@@ -32,7 +32,7 @@ let getData = html => {
         let company = $(raw_element).find('div.sjcl div span.company').text();
         let location = $(raw_element).find('div.sjcl div.recJobLoc').attr('data-rc-loc')
         let description = $(raw_element).find('div.summary ul li').text()
-        let date =$(raw_element).find('span.date').text()
+        let date = $(raw_element).find('span.date').text()
 
 
 
