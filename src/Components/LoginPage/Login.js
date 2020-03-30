@@ -5,7 +5,6 @@ import { useDispatch } from 'react-redux'
 import {useHistory} from 'react-router-dom'
 
  function Login()  {
-
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [loggedInFailed, setLoggedInFailed] = useState(false);

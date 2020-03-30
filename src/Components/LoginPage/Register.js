@@ -23,8 +23,6 @@ function Register (){
             email: email,
             password: password
         }
-
-        console.log('history', history)
   
         axios.post('/auth/register', body).then(res => {
             dispatch(submitUser(res.data));
