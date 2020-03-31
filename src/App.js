@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './reset.css'
 import routes from './routes'
 import Header from './Components/Header/Header'
 
