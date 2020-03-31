@@ -10,7 +10,7 @@ const url = 'https://www.indeed.com'
 
 module.exports = {
     runThatIsh: async (title, location) => {
-        
+
         let getData = html => {
             data = [];
             const $ = cheerio.load(html)
@@ -41,7 +41,7 @@ module.exports = {
 
         let theData = []
 
-        let yoData = await nightmare
+        let finalData = await nightmare
         .goto(url)
         .wait('body')
         .click('input#text-input-what')
@@ -55,14 +55,10 @@ module.exports = {
         .then(async response => {
             let result = await getData(response)
             theData.push(result)
-            console.log('theData', theData);
             return theData
         }).catch(err => {
             console.log(err);
         })
-    
-
-    console.log('yoData right before return', yoData);
-    return yoData
+    return finalData
     }
 }
