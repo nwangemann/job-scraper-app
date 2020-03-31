@@ -41,7 +41,7 @@ let getData = html => {
         if(title) {
             data.push({
                 title: title,
-                link: link,
+                link: 'https://www.indeed.com' + link,
                 company: company,
                 location: location,
                 description: description,

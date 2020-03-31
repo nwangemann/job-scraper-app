@@ -1,42 +1,34 @@
-import React, { Component } from 'react'
-import Axios from 'axios'
+import React, { useState } from 'react'
+import axios from 'axios'
 
-class SearchPage extends Component {
-    constructor(){
-        super()
-        this.state = {
-            scrape: []
-        }
-    }
+function SearchPage (){
+    const [scrape, setScrape] = useState([])
 
-    scrape = () => {
-        Axios.get('/api/scrape').then(res => {
+    function getScrape() {
+        axios.get('/api/scrape').then(res => {
             console.log('what we have to work with', res.data.theData)
-            this.setState({
-                scrape: res.data.theData[0]
-            })
+            let result = res.data.theData[0]
+            setScrape(result)
         }).catch(err => console.log(err))
     }
 
-    render() {
-        const mappedScrape = this.state.scrape.map((elem, i) => {
+
+        const mappedScrape = scrape.map((elem, i) => {
             return <div key={i} >
                 <a href={elem.link}>{elem.title}</a>
 
-                <h2>{elem.company}</h2>
-                <h2>{elem.location}</h2>
-                <h2>{elem.description}</h2>
-                <h2>{elem.date}</h2>
+                <h4>{elem.company}</h4>
+                <h4>{elem.location}</h4>
+                <h4>{elem.description}</h4>
+                <h4>{elem.date}</h4>
             </div>
         })
-        console.log('state', this.state)
         return (
             <div>
                 This is the Search Page
-                <button onClick={this.scrape}>Scrape</button>
+                <button onClick={getScrape}>Scrape</button>
                 {mappedScrape}
             </div>
         )
-    }
 }
 export default SearchPage
