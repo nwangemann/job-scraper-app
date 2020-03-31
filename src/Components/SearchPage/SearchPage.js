@@ -7,27 +7,16 @@ function SearchPage() {
   const [scrape, setScrape] = useState([]);
   const [title, setTitle] = useState("");
   const [location, setLocation] = useState("");
+  const [selectedJob, setSelectedJob] = useState('indeed')
 
-  function searchIndeed() {
+  function search() {
     let body = {
       title: title,
       location: location
     };
+    console.log('selected Job', selectedJob)
     axios
-      .post("/api/indeed", body)
-      .then(res => {
-        setScrape(res.data)
-      })
-      .catch(err => console.log(err));
-  }
-
-  function searchDice() {
-    let body = {
-      title: title,
-      location: location
-    };
-    axios
-      .post("/api/dice", body)
+      .post(`/api/${selectedJob}`, body)
       .then(res => {
         setScrape(res.data)
       })
@@ -38,8 +27,18 @@ function SearchPage() {
     <div>
       <input type="text" onChange={e => setTitle(e.target.value)} placeholder="Job Title" name="title" />
       <input type="text" onChange={e => setLocation(e.target.value)} placeholder="Location" name="location" />
-      <button onClick={searchIndeed}>Search Indeed</button>
-      <button onClick={searchDice}>Search Dice</button>
+       
+      
+      <label for="jobs">Choose where you want to Search:</label>
+      <select onChange={e => setSelectedJob(e.target.value)}id="jobs">
+        <option value="indeed">Indeed</option>
+        <option value="dice">Dice</option>
+        <option value="zr">Zip Recruiter</option>
+      </select>
+      <button onClick={search}>Search</button>
+
+      
+
       <div className="scrapeContainerParent">
         
         {

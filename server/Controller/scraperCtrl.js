@@ -1,5 +1,6 @@
 const {indeedScrape} = require('../scrapers/indeedScraper')
 const {diceScrape} = require('../scrapers/diceScraper')
+const {zrScrape} = require('../scrapers/zrScraper')
 const fs = require('fs');
 
 module.exports = {
@@ -16,5 +17,12 @@ module.exports = {
         let rawdata = fs.readFileSync('dice_scraped_data.json');
         let dataObj = JSON.parse(rawdata);
         res.status(200).send(dataObj)
+    },
+    searchZr: async (req, res, next) => {
+        const {title, location} = req.body
+        let result = await zrScrape(title, location)
+        let rawdata = fs.readFileSync('zr_scraped_data.json');
+        let dataObj = JSON.parse(rawdata);
+        res.status(200).send(dataObj);
     }
 }
