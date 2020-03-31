@@ -13,7 +13,7 @@ function ScrapeContainer(props) {
       </div>
     );
   });
-
+  console.log('props', props)
   return (
     <div>
         {mappedScrape}

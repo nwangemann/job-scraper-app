@@ -16,6 +16,7 @@ function SearchPage() {
     axios
       .post("/api/search", body)
       .then(res => {
+        console.log('res.data', res)
         setScrape(res.data)
       })
       .catch(err => console.log(err));

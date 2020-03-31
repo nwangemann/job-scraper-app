@@ -5,8 +5,10 @@ module.exports = {
     searchScrape: async (req, res, next) => {
         const { title, location } = req.body
         let result = await runScrape(title, location)
+        console.log('result in control', result)
         let rawdata = fs.readFileSync('scraped_data.json');
         let dataObj = JSON.parse(rawdata);
+        console.log('dataObj', dataObj)
         res.status(200).send(dataObj)
     }
 }

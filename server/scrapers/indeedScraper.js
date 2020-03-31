@@ -1,6 +1,5 @@
 const cheerio = require("cheerio");
 const Nightmare = require("nightmare");
-const url = "https://www.indeed.com";
 const fs = require('fs');
 
 
@@ -32,29 +31,25 @@ module.exports = {
       });
       return data;
     };
-
-    //this is currently an async-await function. It's much quicker as a normal function (only seems to work well that way if the nightmare object on line 10 is set to Nightmare({show: false}) so if this is changed from an await to a normal function, that should be changed at the same time)
-
-    nightmare
-      .goto(url)
-      .wait("body")
-      .click("input#text-input-what")
-      .type("input#text-input-what", `${title}`)
-      .click("input#text-input-where")
-      .type("input#text-input-where", ``)
-      .click("button.icl-WhatWhere-button")
+    let dataDump = []
+    let final = await nightmare
+      .goto(`https://www.indeed.com/jobs?q=${title}&l=${location}`)
+      .wait('body')
       .wait("div.jobsearch-SerpJobCard")
       .evaluate(() => document.querySelector("body").innerHTML)
       .end()
       .then(async response => {
         let result = await getData(response);
+        dataDump.push(result)
         let dataStep = JSON.stringify(result, null, 2)
         fs.writeFileSync('scraped_data.json', dataStep);
       })
       .catch(err => {
         console.log(err);
       });
+      return dataDump
     nightmare.end();
+
   }
 };
 
