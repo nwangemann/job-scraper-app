@@ -1,24 +1,26 @@
 import React, { useState } from 'react'
-import Axios from 'axios'
+import axios from 'axios'
 
-function SearchPage() {
-    const [scrape, setScrape] = useState([]);
-      
-    
+function SearchPage (){
+    const [scrape, setScrape] = useState([])
+
     function getScrape() {
-        Axios.get('/api/scrape').then(res => {
-            console.log('res', res)
-            setScrape(res.data.theData[0])          
+        axios.get('/api/scrape').then(res => {
+            console.log('what we have to work with', res.data.theData)
+            let result = res.data.theData[0]
+            setScrape(result)
         }).catch(err => console.log(err))
     }
+
 
         const mappedScrape = scrape.map((elem, i) => {
             return <div key={i} >
                 <a href={elem.link}>{elem.title}</a>
-                <h2>{elem.company}</h2>
-                <h2>{elem.location}</h2>
-                <h2>{elem.description}</h2>
-                <h2>{elem.date}</h2>
+
+                <h4>{elem.company}</h4>
+                <h4>{elem.location}</h4>
+                <h4>{elem.description}</h4>
+                <h4>{elem.date}</h4>
             </div>
         })
         return (
@@ -28,6 +30,5 @@ function SearchPage() {
                 {mappedScrape}
             </div>
         )
-    }
-
+}
 export default SearchPage

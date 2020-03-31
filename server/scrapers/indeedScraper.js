@@ -24,6 +24,7 @@ nightmare
   });
 
 let getData = html => {
+<<<<<<< HEAD
   data = [];
   const $ = cheerio.load(html);
   $("div.jobsearch-SerpJobCard").each((row, raw_element) => {
@@ -60,3 +61,35 @@ let getData = html => {
   console.log("data", data);
   return data;
 };
+=======
+    data = [];
+    const $ = cheerio.load(html)
+    $('div.jobsearch-SerpJobCard').each((row, raw_element) => {
+        let title = $(raw_element).find('div.title a').attr('title');
+        let link = $(raw_element).find('div.title a').attr('href')
+        let company = $(raw_element).find('div.sjcl div span.company').text();
+        let location = $(raw_element).find('div.sjcl div.recJobLoc').attr('data-rc-loc')
+        let description = $(raw_element).find('div.summary ul li').text()
+        let date = $(raw_element).find('span.date').text()
+
+
+
+        if(title) {
+            data.push({
+                title: title,
+                link: 'https://www.indeed.com' + link,
+                company: company,
+                location: location,
+                description: description,
+                date: date
+
+            })
+        }
+    })
+    return data
+}
+
+module.exports = {
+    theData: theData
+}
+>>>>>>> 1f0774d461ee3a4edb5bc86bae98ab359588ec71
