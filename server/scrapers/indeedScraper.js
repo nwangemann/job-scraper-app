@@ -31,7 +31,6 @@ module.exports = {
       });
       return data;
     };
-    let dataDump = []
     let final = await nightmare
       .goto(`https://www.indeed.com/jobs?q=${title}&l=${location}`)
       .wait('body')
@@ -40,14 +39,13 @@ module.exports = {
       .end()
       .then(async response => {
         let result = await getData(response);
-        dataDump.push(result)
         let dataStep = JSON.stringify(result, null, 2)
         fs.writeFileSync('scraped_data.json', dataStep);
       })
       .catch(err => {
         console.log(err);
       });
-      return dataDump
+  
     nightmare.end();
 
   }

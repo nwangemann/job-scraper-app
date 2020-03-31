@@ -6,7 +6,7 @@ const app = express();
 const { searchScrape } = require('./Controller/scraperCtrl')
 
 const {SERVER_PORT, SESSION_SECRET, CONNECTION_STRING} = process.env
-const {login, registerUser, logout, userSession} = require('./controller/authCtrl')
+const {editPassword, editEmail, login, registerUser, logout, userSession} = require('./controller/authCtrl')
 
 app.use(express.json());
 
@@ -29,6 +29,8 @@ app.post('/auth/login', login);
 app.post('/auth/register', registerUser);
 app.get('/auth/userSession', userSession);
 app.get('/auth/logout', logout);
+app.put('/auth/edit_email/:user_id', editEmail)
+app.put('/auth/edit_password/:user_id', editPassword)
 
 // listingCtrl Endpoints
 

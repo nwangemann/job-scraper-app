@@ -9,9 +9,7 @@ import {useHistory} from 'react-router-dom'
     const [password, setPassword] = useState('');
     const [loggedInFailed, setLoggedInFailed] = useState(false);
 
-
     const dispatch = useDispatch();
-
     const history = useHistory();
 
     function loginSubmit(email, password){
@@ -34,7 +32,7 @@ import {useHistory} from 'react-router-dom'
                     loginSubmit(email, password)
                 }}>
                     <input onChange={e => setEmail(e.target.value)}type="text" name="email" placeholder="Email"></input>
-                    <input onChange={e => setPassword(e.target.value)} type="text" name="password" placeholder="Password"></input>
+                    <input onChange={e => setPassword(e.target.value)} type="password" name="password" placeholder="Password"></input>
 
                     {
                         loggedInFailed
