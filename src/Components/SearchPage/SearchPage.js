@@ -38,7 +38,8 @@ function SearchPage() {
     <div>
       <input type="text" onChange={e => setTitle(e.target.value)} placeholder="Job Title" name="title" />
       <input type="text" onChange={e => setLocation(e.target.value)} placeholder="Location" name="location" />
-      <button onClick={searchDice}>Search</button>
+      <button onClick={searchIndeed}>Search Indeed</button>
+      <button onClick={searchDice}>Search Dice</button>
       <div className="scrapeContainerParent">
         
         {
