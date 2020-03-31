@@ -27,6 +27,7 @@ function SearchPage() {
       <input type="text" onChange={e => setLocation(e.target.value)} placeholder="Location" name="location" />
       <button onClick={search}>Search</button>
       <div className="scrapeContainerParent">
+        
         {
         scrape ? 
         <ScrapeContainer scrape={scrape}/> 

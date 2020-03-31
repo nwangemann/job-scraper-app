@@ -6,7 +6,7 @@ const fs = require('fs');
 
 module.exports = {
   runScrape: async (title, location) => {
-    let nightmare = Nightmare({ show: true });
+    let nightmare = Nightmare({ show: false });
 
     let getData = html => {
       data = [];
@@ -35,13 +35,13 @@ module.exports = {
 
     //this is currently an async-await function. It's much quicker as a normal function (only seems to work well that way if the nightmare object on line 10 is set to Nightmare({show: false}) so if this is changed from an await to a normal function, that should be changed at the same time)
 
-    let finalData = await nightmare
+    nightmare
       .goto(url)
       .wait("body")
       .click("input#text-input-what")
       .type("input#text-input-what", `${title}`)
       .click("input#text-input-where")
-      .type("input#text-input-where", "")
+      .type("input#text-input-where", ``)
       .click("button.icl-WhatWhere-button")
       .wait("div.jobsearch-SerpJobCard")
       .evaluate(() => document.querySelector("body").innerHTML)
