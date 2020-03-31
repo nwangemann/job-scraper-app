@@ -8,7 +8,7 @@ import {useHistory} from 'react-router-dom'
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [loggedInFailed, setLoggedInFailed] = useState(false);
-
+    
     const dispatch = useDispatch();
     const history = useHistory();
 
@@ -23,7 +23,6 @@ import {useHistory} from 'react-router-dom'
             setLoggedInFailed(true)
         })
     }
-   
         return (
             <div>
                 This is the login component
@@ -33,7 +32,6 @@ import {useHistory} from 'react-router-dom'
                 }}>
                     <input onChange={e => setEmail(e.target.value)}type="text" name="email" placeholder="Email"></input>
                     <input onChange={e => setPassword(e.target.value)} type="password" name="password" placeholder="Password"></input>
-
                     {
                         loggedInFailed
                         ?
@@ -41,14 +39,9 @@ import {useHistory} from 'react-router-dom'
                         :
                         null
                     }
-
-                    <input type="submit" placeholder="Login" value="login"/>
-                    
-                
+                    <input type="submit" placeholder="Login" value="login"/>          
                 </form>
-                <button
-                onClick={() => dispatch(switchToRegister())}
-                >Switch to register</button>
+                <button onClick={() => dispatch(switchToRegister())}>New User? Register</button>
             </div>
         )
     }

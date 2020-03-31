@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 function AccountPage() {
   const user_id = useSelector(state => state.user.user_id);
@@ -14,14 +14,11 @@ function AccountPage() {
   const history = useHistory();
 
   function changeEmail() {
-    console.log("user_id = ", user_id);
     let body = { email: email };
     axios
       .put(`/auth/edit_email/${user_id}`, body)
       .then(res => {
-        console.log("before setDisplay", res);
         setDisplayEmail(res.data[0].email);
-        console.log("after setDisplay", res);
       })
       .catch(err => console.log(err));
   }
@@ -34,13 +31,12 @@ function AccountPage() {
       })
       .catch(err => console.log(err));
   }
-
   function back() {
     history.push("/");
   }
   return (
     <div>
-        <button onClick={back}>Back</button>
+        <button onClick={back}>Return</button>
       <div>{displayEmail}</div>
       <form
         onSubmit={e => {
@@ -71,7 +67,6 @@ function AccountPage() {
         <input type="submit" placeholder="Save Password" />
         <div>{changedPassword ? <p>Changed Password Successfully</p> : null}</div>
       </form>
-      
     </div>
   );
 }
