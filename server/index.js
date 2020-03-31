@@ -3,7 +3,7 @@ const express = require('express');
 const massive = require('massive');
 const session = require('express-session');
 const app = express();
-const { searchScrape } = require('./Controller/scraperCtrl')
+const { searchIndeed, searchDice } = require('./Controller/scraperCtrl')
 
 const {SERVER_PORT, SESSION_SECRET, CONNECTION_STRING} = process.env
 const {editPassword, editEmail, login, registerUser, logout, userSession} = require('./controller/authCtrl')
@@ -36,6 +36,7 @@ app.put('/auth/edit_password/:user_id', editPassword)
 
 
 // scraperCtrl Endpoints
-app.post('/api/search', searchScrape);
+app.post('/api/indeed', searchIndeed);
+app.post('/api/dice', searchDice);
 
 app.listen(SERVER_PORT, () => console.log(`Running on Server Port ${SERVER_PORT}`));

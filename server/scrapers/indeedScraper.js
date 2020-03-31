@@ -4,7 +4,7 @@ const fs = require('fs');
 
 
 module.exports = {
-  runScrape: async (title, location) => {
+  indeedScrape: async (title, location) => {
     let nightmare = Nightmare({ show: false });
 
     let getData = html => {
@@ -40,7 +40,7 @@ module.exports = {
       .then(async response => {
         let result = await getData(response);
         let dataStep = JSON.stringify(result, null, 2)
-        fs.writeFileSync('scraped_data.json', dataStep);
+        fs.writeFileSync('indeed_scraped_data.json', dataStep);
       })
       .catch(err => {
         console.log(err);

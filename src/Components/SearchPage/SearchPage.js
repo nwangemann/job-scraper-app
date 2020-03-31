@@ -8,15 +8,27 @@ function SearchPage() {
   const [title, setTitle] = useState("");
   const [location, setLocation] = useState("");
 
-  function search() {
+  function searchIndeed() {
     let body = {
       title: title,
       location: location
     };
     axios
-      .post("/api/search", body)
+      .post("/api/indeed", body)
       .then(res => {
-        console.log('res.data', res)
+        setScrape(res.data)
+      })
+      .catch(err => console.log(err));
+  }
+
+  function searchDice() {
+    let body = {
+      title: title,
+      location: location
+    };
+    axios
+      .post("/api/dice", body)
+      .then(res => {
         setScrape(res.data)
       })
       .catch(err => console.log(err));
@@ -26,7 +38,7 @@ function SearchPage() {
     <div>
       <input type="text" onChange={e => setTitle(e.target.value)} placeholder="Job Title" name="title" />
       <input type="text" onChange={e => setLocation(e.target.value)} placeholder="Location" name="location" />
-      <button onClick={search}>Search</button>
+      <button onClick={searchDice}>Search</button>
       <div className="scrapeContainerParent">
         
         {
