@@ -1,5 +1,4 @@
 const cheerio = require("cheerio");
-const request = require("request-promise");
 const Nightmare = require("nightmare");
 const url = "https://www.indeed.com";
 const fs = require('fs');
@@ -13,24 +12,12 @@ module.exports = {
       data = [];
       const $ = cheerio.load(html);
       $("div.jobsearch-SerpJobCard").each((row, raw_element) => {
-        let title = $(raw_element)
-          .find("div.title a")
-          .attr("title");
-        let link = $(raw_element)
-          .find("div.title a")
-          .attr("href");
-        let company = $(raw_element)
-          .find("div.sjcl div span.company")
-          .text();
-        let location = $(raw_element)
-          .find("div.sjcl div.recJobLoc")
-          .attr("data-rc-loc");
-        let description = $(raw_element)
-          .find("div.summary ul li")
-          .text();
-        let date = $(raw_element)
-          .find("span.date")
-          .text();
+        let title = $(raw_element).find("div.title a").attr("title");
+        let link = $(raw_element).find("div.title a").attr("href");
+        let company = $(raw_element).find("div.sjcl div span.company").text();
+        let location = $(raw_element).find("div.sjcl div.recJobLoc").attr("data-rc-loc");
+        let description = $(raw_element).find("div.summary ul li").text();
+        let date = $(raw_element).find("span.date").text();
 
         if (title) {
           data.push({
@@ -46,7 +33,7 @@ module.exports = {
       return data;
     };
 
-    //not sure if this needs to be an async-await function or not. much quicker if it's not, but looks weird with nightmare({show:true}), might need to either switch them both or not at all. 
+    //this is currently an async-await function. It's much quicker as a normal function (only seems to work well that way if the nightmare object on line 10 is set to Nightmare({show: false}) so if this is changed from an await to a normal function, that should be changed at the same time)
 
     let finalData = await nightmare
       .goto(url)

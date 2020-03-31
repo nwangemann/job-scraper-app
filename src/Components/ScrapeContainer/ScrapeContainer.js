@@ -1,17 +1,15 @@
 import React from "react";
-
+import './ScrapeContainer.css'
 
 function ScrapeContainer(props) {
-    console.log('props', props)
   const mappedScrape = props.scrape.map((elem, i) => {
     return (
-      <div key={i}>
+      <div key={i} className="listingContainer">
         <a href={elem.link}>{elem.title}</a>
-
-        <h4>{elem.company}</h4>
-        <h4>{elem.location}</h4>
-        <h4>{elem.description}</h4>
-        <h4>{elem.date}</h4>
+        <h5>{elem.company}</h5>
+        <h5>{elem.location}</h5>
+        <h5>{elem.description}</h5>
+        <h5>{elem.date}</h5>
       </div>
     );
   });

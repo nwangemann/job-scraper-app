@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
-import ScrapeContainer from './ScrapeContainer'
+import './SearchPage.css'
+import ScrapeContainer from '../ScrapeContainer/ScrapeContainer'
 
 function SearchPage() {
   const [scrape, setScrape] = useState([]);
@@ -15,23 +16,7 @@ function SearchPage() {
     axios
       .post("/api/search", body)
       .then(res => {
-          console.log('res', res)
-          setScrape(res.data)
-        // let newArr = [];
-        // let array = res.data[0].map(elem => {
-        //   let item = [
-        //     elem.title.toString(),
-        //     elem.link.toString(),
-        //     elem.company.toString(),
-        //     elem.location.toString(),
-        //     elem.description.toString(),
-        //     elem.date.toString()
-        //   ];
-        //   newArr.push(item);
-        //   return item;
-        // });
-        // console.log("array", array);
-        // setScrape(newArr);
+        setScrape(res.data)
       })
       .catch(err => console.log(err));
   }
@@ -39,28 +24,17 @@ function SearchPage() {
   return (
     <div>
       This is the Search Page
-      <input
-        type="text"
-        onChange={e => setTitle(e.target.value)}
-        placeholder="title"
-        name="title"
-      />
-      <input
-        type="text"
-        onChange={e => setLocation(e.target.value)}
-        placeholder="location"
-        name="location"
-      />
+      <input type="text" onChange={e => setTitle(e.target.value)} placeholder="title" name="title" />
+      <input type="text" onChange={e => setLocation(e.target.value)} placeholder="location" name="location" />
       <button onClick={search}>Search</button>
-
-      {
-      scrape 
-      ? 
-      <ScrapeContainer scrape={scrape}/> 
-      : 
-      null
-      }
-
+      <div className="scrapeContainerParent">
+        {
+        scrape ? 
+        <ScrapeContainer scrape={scrape}/> 
+        : 
+        null
+        }
+      </div>
     </div>
   );
 }
