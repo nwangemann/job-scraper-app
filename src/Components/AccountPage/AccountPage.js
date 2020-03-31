@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
+import "./AccountPage.css";
 
 function AccountPage() {
   const user_id = useSelector(state => state.user.user_id);
@@ -10,6 +11,7 @@ function AccountPage() {
   const [password, setPassword] = useState("");
   const [displayEmail, setDisplayEmail] = useState(yourEmail);
   const [changedPassword, setChangedPassword] = useState(false);
+  const [thePasswordMessage, setThePasswordMessage] = useState(false);
 
   const history = useHistory();
 
@@ -34,39 +36,58 @@ function AccountPage() {
   function back() {
     history.push("/");
   }
+  function passwordMessage() {
+    setThePasswordMessage(true);
+
+    setTimeout(function() {
+      setThePasswordMessage(false);
+    }, 2000);
+  }
   return (
-    <div>
-        <button onClick={back}>Return</button>
-      <div>{displayEmail}</div>
-      <form
-        onSubmit={e => {
-          e.preventDefault();
-          changeEmail();
-        }}
-      >
-        <input
-          type="email"
-          name="email"
-          onChange={e => setEmail(e.target.value)}
-          placeholder="New Email"
-        ></input>
-        <input type="submit" placeholder="Save Email"/>
-      </form>
-      <form
-        onSubmit={e => {
-          e.preventDefault();
-          changePassword();
-        }}
-      >
-        <input
-          type="password"
-          name="password"
-          onChange={e => setPassword(e.target.value)}
-          placeholder="New Password"
-        ></input>
-        <input type="submit" placeholder="Save Password" />
-        <div>{changedPassword ? <p>Changed Password Successfully</p> : null}</div>
-      </form>
+    <div className="outerDiv">
+      <button onClick={back}>Return</button>
+
+      <div className="container">
+        <form
+          className="emailForm"
+          onSubmit={e => {
+            e.preventDefault();
+            changeEmail();
+          }}
+        >
+          <div>
+            <input
+              type="email"
+              name="email"
+              onChange={e => setEmail(e.target.value)}
+              placeholder="New Email"
+            />
+            <input type="submit" placeholder="Save Email" />
+          </div>
+          <p>{displayEmail}</p>
+        </form>
+        <form
+          className="passwordForm"
+          onSubmit={e => {
+            e.preventDefault();
+            changePassword();
+            passwordMessage();
+          }}
+        >
+          <input
+            type="password"
+            name="password"
+            onChange={e => setPassword(e.target.value)}
+            placeholder="New Password"
+          />
+          <input type="submit" placeholder="Save Password" />
+          <div className="messageContainer">
+            {changedPassword && thePasswordMessage ? (
+              <p className="passwordMessage">Changed Password Successfully</p>
+            ) : null}
+          </div>
+        </form>
+      </div>
     </div>
   );
 }
