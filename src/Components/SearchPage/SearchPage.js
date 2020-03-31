@@ -15,23 +15,23 @@ function SearchPage() {
     axios
       .post("/api/search", body)
       .then(res => {
-        console.log("res", res);
-        let newArr = [];
-        let array = res.data[0].map(elem => {
-          console.log("elem", elem);
-          let item = [
-            elem.title.toString(),
-            elem.link.toString(),
-            elem.company.toString(),
-            elem.location.toString(),
-            elem.description.toString(),
-            elem.date.toString()
-          ];
-          newArr.push(item);
-          return item;
-        });
-        console.log("array", array);
-        setScrape(newArr);
+          console.log('res', res)
+          setScrape(res.data)
+        // let newArr = [];
+        // let array = res.data[0].map(elem => {
+        //   let item = [
+        //     elem.title.toString(),
+        //     elem.link.toString(),
+        //     elem.company.toString(),
+        //     elem.location.toString(),
+        //     elem.description.toString(),
+        //     elem.date.toString()
+        //   ];
+        //   newArr.push(item);
+        //   return item;
+        // });
+        // console.log("array", array);
+        // setScrape(newArr);
       })
       .catch(err => console.log(err));
   }
