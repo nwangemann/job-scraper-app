@@ -3,7 +3,8 @@ const express = require('express');
 const massive = require('massive');
 const session = require('express-session');
 const app = express();
-const { searchZr, searchIndeed, searchDice } = require('./Controller/scraperCtrl')
+
+const {searchZr, searchIndeed, searchDice} = require('./Controller/scraperCtrl')
 const {saveListing, getSavedListings, deleteListing} = require('./Controller/listingCtrl')
 const {SERVER_PORT, SESSION_SECRET, CONNECTION_STRING} = process.env
 const {editPassword, editEmail, login, registerUser, logout, userSession} = require('./controller/authCtrl')
@@ -36,7 +37,6 @@ app.put('/auth/edit_password/:user_id', editPassword)
 app.get('/api/listings/:user_id', getSavedListings)
 app.post('/api/listings/:user_id', saveListing)
 app.delete('/api/listings/:job_id', deleteListing)
-
 
 // scraperCtrl Endpoints
 app.post('/api/indeed', searchIndeed);
