@@ -17,9 +17,9 @@ function SubHeader() {
 
     return (
         <div>           
-            <Link to='/account'>Account</Link>
+            <Link className="links" to='/account'>Account</Link>
             <Link className="links" to="/saved_jobs">Saved</Link>
-            <Link onClick={logOut}to='/'>Logout</Link>
+            <Link className="links" onClick={logOut}to='/'>Logout</Link>
         </div>
     )
 }
