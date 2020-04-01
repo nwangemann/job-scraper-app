@@ -11,12 +11,21 @@
   display: flex;
   justify-content: space-between;
   width: 70vw;
-  margin-bottom: 300px;
+  margin-bottom: 200px;
 }
 .accountSettings{
   font-size: 50px;
   text-decoration: underline;
   font-family: 'Abel', sans-serif;
+}
+
+.returnImg {
+  width: 70px;
+  height: 70px;
+}
+
+.returnImg:hover {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
 }
 .accountContainer {
     display: flex;
@@ -28,7 +37,15 @@
     border-radius: 10px;
     flex-direction: column;
   }
-
+.formDiv{
+  width: 50vw;
+  height: 0vh;
+  /* background-color: violet; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 300px;
+}
 .emailForm {
   height: 12vh;
   width: 25vw;
@@ -38,7 +55,7 @@
   margin: 10px;
   flex-direction: column;
   position: sticky;
-  background-color: thistle;
+  background-color: #666B6E;
   border-radius: 10px;
 }
 
@@ -50,7 +67,7 @@
   justify-content: center;
   margin: 10px;
   flex-direction: column;
-  background-color: thistle;
+  background-color: #666B6E;
   border-radius: 10px;
 
 }

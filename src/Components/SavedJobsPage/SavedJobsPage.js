@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import axios from "axios";
 import SavedJobsContainer from '../SavedJobsContainter/SavedJobsContainer'
@@ -7,9 +7,9 @@ function SavedJobsPage() {
   const [savedList, setSavedList] = useState("");
   const user_id = useSelector(state => state.user.user_id);
 
-//   useEffect(() => {
-//     getListings()
-//   });
+  useEffect(() => {
+    getListings()
+  });
 
   function getListings(){
     axios.get(`/api/listings/${user_id}`).then(res => {
@@ -30,7 +30,6 @@ function SavedJobsPage() {
   return (
     <div>
       Saved Jobs Page
-      <button onClick={getListings} >Get Saved Listings</button>
       {savedList ? <SavedJobsContainer savedList={savedList} deleteListing={deleteListing} /> : null}
     </div>
   );

@@ -3,6 +3,7 @@ import axios from "axios";
 import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
 import "./AccountPage.css";
+import returnpng from './return_arrow.png'
 
 function AccountPage() {
   const user_id = useSelector(state => state.user.user_id);
@@ -50,9 +51,12 @@ function AccountPage() {
       <div className="accountContainer">
         <div className="settingDiv">
         <p className="accountSettings">Account Settings</p>
-        <button onClick={back}>Back</button>
+        {/* <button onClick={back}>Back</button> */}
+        {/* <img className="returnImg" onClick={back} src="https://img.icons8.com/carbon-copy/100/000000/return.png"/> */}
+        <img  onClick={back} alt="returnimg" className="returnImg" src={returnpng}/>
         </div>
-      
+        
+        <div className="formDiv">
         <form
           className="emailForm"
           onSubmit={e => {
@@ -94,6 +98,7 @@ function AccountPage() {
             ) : <p></p>}
           </div>
         </form>
+        </div>
       </div>
     </div>
   );
