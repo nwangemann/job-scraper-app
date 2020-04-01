@@ -6,12 +6,18 @@ module.exports = {
         res.status(200).send(getAllListings)
     },
     saveListing: async (req, res, next) => {
+        const db = req.app.get('db');
+        const {user_id} = req.params;
+        const {title, link, company, location, description, date} = req.body
+        const addListing = await db.add_listing(user_id, title, company, description, location, date, link);
+        res.status(200).send(addListing)
 
     },
     deleteListing: async (req, res, next) => {
-
-    },
-    editListing: async (req, res, next) => {
-
+        const db = req.app.get("db");
+        const {jobs_id} = req.params;
+        const {user_id} = req.body;
+        const remove = await db.remove_job(jobs_id, user_id);
+        res.status(200).send(remove)
     }
 }

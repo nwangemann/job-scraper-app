@@ -1,7 +1,40 @@
-import React from "react";
+import React, {useState} from "react";
+import {useSelector} from 'react-redux'
 import './ScrapeContainer.css'
+import axios from 'axios'
 
 function ScrapeContainer(props) {
+  const user_id = useSelector(state => state.user.user_id);
+  const isLoggedIn = useSelector(state => state.isLoggedIn)
+  const [successMessage, setSuccessMessage] = useState(1000)
+
+  function save(e) {
+    let body = e.target.value.split(' ** ')
+    let targetListing = e.target.id
+    let listingBody = {
+      title: body[0],
+      link: body[1],
+      company: body[2],
+      location: body[3],
+      date: body[4]
+    }
+    axios.post(`/api/listings/${user_id}`, listingBody).then(res => {
+        celebrateSuccess(targetListing)
+        console.log('this fired, targetlisting', targetListing)
+      }).catch(err => console.log(err));
+  }
+
+  function celebrateSuccess(indexOfTarget){
+    console.log('indexofTarger', indexOfTarget)
+    setSuccessMessage(indexOfTarget)
+    setTimeout(
+      function() {
+        setSuccessMessage({successMessage: false})
+      },
+      2000
+    );
+  }
+  
   const mappedScrape = props.scrape.map((elem, i) => {
     return (
       <div key={i} className="listingContainer">
@@ -10,10 +43,26 @@ function ScrapeContainer(props) {
         <h5>Location: {elem.location}</h5>
         <h5>Description: {elem.description}</h5>
         <h5>{elem.date}</h5>
+        {
+          +successMessage === +i ? 
+          <p id="successMessage">Added to saved listings</p>
+          :
+          null
+        }
+        {
+            isLoggedIn
+            ?
+            <button onClick={save} 
+            id={i}
+            value={`${elem.title} ** ${elem.link} ** ${elem.company} ** ${elem.location} ** ${elem.description} ** ${elem.date}`}
+            >Save</button>
+            :
+            null
+          }
       </div>
     );
   });
-  console.log('props', props)
+
   return (
     <div>
         {mappedScrape}

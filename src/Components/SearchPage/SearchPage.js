@@ -14,7 +14,6 @@ function SearchPage() {
       title: title,
       location: location
     };
-    console.log('selected Job', selectedJob)
     axios
       .post(`/api/${selectedJob}`, body)
       .then(res => {
@@ -29,7 +28,7 @@ function SearchPage() {
       <input type="text" onChange={e => setLocation(e.target.value)} placeholder="Location" name="location" />
        
       
-      <label for="jobs">Choose where you want to Search:</label>
+      <label>Choose where you want to Search:</label>
       <select onChange={e => setSelectedJob(e.target.value)}id="jobs">
         <option value="indeed">Indeed</option>
         <option value="dice">Dice</option>

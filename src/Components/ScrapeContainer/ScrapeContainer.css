@@ -6,3 +6,9 @@
     border: 5px inset lightgrey;
     border-radius: 15px;
 }
+
+#successMessage{
+    font-weight: 600;
+    color: green;
+    font-size: 18px;
+}
