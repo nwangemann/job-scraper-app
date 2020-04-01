@@ -7,10 +7,18 @@
   flex-direction: column;
 }
 
-button {
+.settingDiv{
   display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  margin-bottom: 300px;
 }
-.container {
+.accountSettings{
+  font-size: 50px;
+  text-decoration: underline;
+  font-family: 'Abel', sans-serif;
+}
+.accountContainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,6 +26,7 @@ button {
     width: 75vw;
     height: 75vh;
     border-radius: 10px;
+    flex-direction: column;
   }
 
 .emailForm {
@@ -30,6 +39,7 @@ button {
   flex-direction: column;
   position: sticky;
   background-color: thistle;
+  border-radius: 10px;
 }
 
 .passwordForm {
@@ -41,14 +51,17 @@ button {
   margin: 10px;
   flex-direction: column;
   background-color: thistle;
+  border-radius: 10px;
+
+
 }
 
 
 
 .messageContainer {
-    display: flex;
-    flex-direction: column;
-    
+  height: 0px;
+  display: flex;
+  flex-direction: column;
 }
 
 .passwordMessage {
@@ -60,7 +73,7 @@ button {
     0%,100% { opacity: 0; }
     50% { opacity: 1; }
   }
-  
+
   @keyframes fadeinout {
     0%,100% { opacity: 0; }
     50% { opacity: 1; }

@@ -45,9 +45,14 @@ function AccountPage() {
   }
   return (
     <div className="outerDiv">
-      <button onClick={back}>Return</button>
+      
 
-      <div className="container">
+      <div className="accountContainer">
+        <div className="settingDiv">
+        <p className="accountSettings">Account Settings</p>
+        <button onClick={back}>Back</button>
+        </div>
+      
         <form
           className="emailForm"
           onSubmit={e => {
@@ -74,6 +79,7 @@ function AccountPage() {
             passwordMessage();
           }}
         >
+          <div>
           <input
             type="password"
             name="password"
@@ -81,10 +87,11 @@ function AccountPage() {
             placeholder="New Password"
           />
           <input type="submit" placeholder="Save Password" />
+          </div>
           <div className="messageContainer">
             {changedPassword && thePasswordMessage ? (
               <p className="passwordMessage">Changed Password Successfully</p>
-            ) : null}
+            ) : <p></p>}
           </div>
         </form>
       </div>
