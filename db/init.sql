@@ -11,10 +11,9 @@ CREATE TABLE jobs (
     company VARCHAR(50),
     description TEXT,
     location TEXT,
-    salary INT,
+    link TEXT,
     user_id INT REFERENCES users(user_id)
 );
-
 
 -- updating column
 

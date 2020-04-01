@@ -4,7 +4,7 @@ const massive = require('massive');
 const session = require('express-session');
 const app = express();
 const { searchZr, searchIndeed, searchDice } = require('./Controller/scraperCtrl')
-
+const {getSavedListings} = require('./Controller/listingCtrl')
 const {SERVER_PORT, SESSION_SECRET, CONNECTION_STRING} = process.env
 const {editPassword, editEmail, login, registerUser, logout, userSession} = require('./controller/authCtrl')
 
@@ -33,6 +33,10 @@ app.put('/auth/edit_email/:user_id', editEmail)
 app.put('/auth/edit_password/:user_id', editPassword)
 
 // listingCtrl Endpoints
+app.get('/api/listings/user:id', getSavedListings)
+app.post('/api/listings/:user_id', saveListing)
+app.delete('/api/listings/:job_id', deleteListing)
+app.put('/api/listings/:job_id', editListing)
 
 
 // scraperCtrl Endpoints
