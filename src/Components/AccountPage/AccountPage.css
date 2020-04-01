@@ -53,10 +53,7 @@
   background-color: thistle;
   border-radius: 10px;
 
-
 }
-
-
 
 .messageContainer {
   height: 0px;
@@ -73,7 +70,7 @@
     0%,100% { opacity: 0; }
     50% { opacity: 1; }
   }
-
+  
   @keyframes fadeinout {
     0%,100% { opacity: 0; }
     50% { opacity: 1; }
