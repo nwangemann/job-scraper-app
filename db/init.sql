@@ -6,7 +6,7 @@ CREATE TABLE users (
 );
 
 CREATE TABLE jobs (
-    jobs_id SERIAL PRIMARY KEY,
+    job_id SERIAL PRIMARY KEY,
     title TEXT,
     company VARCHAR(50),
     description TEXT,
