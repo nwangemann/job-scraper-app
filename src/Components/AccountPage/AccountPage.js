@@ -51,12 +51,14 @@ function AccountPage() {
       <div className="accountContainer">
         <div className="settingDiv">
         <p className="accountSettings">Account Settings</p>
-        {/* <button onClick={back}>Back</button> */}
-        {/* <img className="returnImg" onClick={back} src="https://img.icons8.com/carbon-copy/100/000000/return.png"/> */}
         <img  onClick={back} alt="returnimg" className="returnImg" src={returnpng}/>
         </div>
-        
+
+
+
         <div className="formDiv">
+        <p className="email">Email:{displayEmail}</p>
+
         <form
           className="emailForm"
           onSubmit={e => {
@@ -73,7 +75,6 @@ function AccountPage() {
             />
             <input type="submit" placeholder="Save Email" />
           </div>
-          <p>{displayEmail}</p>
         </form>
         <form
           className="passwordForm"
