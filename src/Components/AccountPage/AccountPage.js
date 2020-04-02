@@ -50,8 +50,6 @@ function AccountPage() {
       
           <div className="settingDiv">
             <p className="accountSettings">Account Settings</p>
-            {/* <button onClick={back}>Back</button> */}
-            {/* <img className="returnImg" onClick={back} src="https://img.icons8.com/carbon-copy/100/000000/return.png"/> */}
             <img
               onClick={back}
               alt="returnimg"
@@ -78,6 +76,7 @@ function AccountPage() {
                 name="email"
                 onChange={e => setEmail(e.target.value)}
                 placeholder="New Email"
+                className="accountInput"
               />
               <input
                 type="submit"
@@ -101,6 +100,7 @@ function AccountPage() {
                 name="password"
                 onChange={e => setPassword(e.target.value)}
                 placeholder="New Password"
+                className="accountInput"
               />
               <input
                 type="submit"

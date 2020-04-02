@@ -72,7 +72,7 @@
   box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
 }
 
-input{
+.accountInput{
   padding: 4px;
   border-radius: 5px;
   margin: 2px 5px;
