@@ -1,5 +1,8 @@
+@import '../../variable.scss';
+
 .outerDiv {
-  background-color: #666b6e;
+  // background-color: #666b6e;
+  background-color: $color-primary;
   height: 90vh;
   display: flex;
   align-items: center;
@@ -37,6 +40,7 @@
     align-items: center;
     justify-content: flex-start;
     background-color: whitesmoke;
+    // background-color: $color-secondary;
     width: 75vw;
     height: 75vh;
     border-radius: 10px;

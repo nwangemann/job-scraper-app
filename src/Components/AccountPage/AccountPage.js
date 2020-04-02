@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
-import "./AccountPage.css";
+import "./AccountPage.scss";
 import returnpng from "./return_arrow.png";
 
 function AccountPage() {

@@ -24,7 +24,8 @@
     "redux": "^4.0.5",
     "redux-promise-middleware": "^6.1.2",
     "request": "^2.88.2",
-    "request-promise": "^4.2.5"
+    "request-promise": "^4.2.5",
+    "sass": "^1.26.3"
   },
   "scripts": {
     "start": "react-scripts start",
