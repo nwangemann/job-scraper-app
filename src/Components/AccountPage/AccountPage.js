@@ -3,7 +3,7 @@ import axios from "axios";
 import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
 import "./AccountPage.css";
-import returnpng from './return_arrow.png'
+import returnpng from "./return_arrow.png";
 
 function AccountPage() {
   const user_id = useSelector(state => state.user.user_id);
@@ -46,59 +46,76 @@ function AccountPage() {
   }
   return (
     <div className="outerDiv">
-      
-
       <div className="accountContainer">
-        <div className="settingDiv">
-        <p className="accountSettings">Account Settings</p>
-        <img  onClick={back} alt="returnimg" className="returnImg" src={returnpng}/>
-        </div>
-
-
-
-        <div className="formDiv">
-        <p className="email">Email:{displayEmail}</p>
-
-        <form
-          className="emailForm"
-          onSubmit={e => {
-            e.preventDefault();
-            changeEmail();
-          }}
-        >
-          <div>
-            <input
-              type="email"
-              name="email"
-              onChange={e => setEmail(e.target.value)}
-              placeholder="New Email"
+      
+          <div className="settingDiv">
+            <p className="accountSettings">Account Settings</p>
+            {/* <button onClick={back}>Back</button> */}
+            {/* <img className="returnImg" onClick={back} src="https://img.icons8.com/carbon-copy/100/000000/return.png"/> */}
+            <img
+              onClick={back}
+              alt="returnimg"
+              className="returnImg"
+              src={returnpng}
             />
-            <input type="submit" placeholder="Save Email" />
           </div>
-        </form>
-        <form
-          className="passwordForm"
-          onSubmit={e => {
-            e.preventDefault();
-            changePassword();
-            passwordMessage();
-          }}
-        >
           <div>
-          <input
-            type="password"
-            name="password"
-            onChange={e => setPassword(e.target.value)}
-            placeholder="New Password"
-          />
-          <input type="submit" placeholder="Save Password" />
+            <h1 className="yourEmail">Your Email:{displayEmail}</h1>
+          </div>
+    
+        <div className="formDiv">
+          <div>
+            <form
+              className="emailForm"
+              onSubmit={e => {
+                e.preventDefault();
+                changeEmail();
+              }}
+            >
+              <h1 className="changeText">Change Email:</h1>
+              <input
+                type="email"
+                name="email"
+                onChange={e => setEmail(e.target.value)}
+                placeholder="New Email"
+              />
+              <input
+                type="submit"
+                className="submitButton"
+                placeholder="Save Email"
+              />
+            </form>
+          </div>
+          <div>
+            <form
+              className="passwordForm"
+              onSubmit={e => {
+                e.preventDefault();
+                changePassword();
+                passwordMessage();
+              }}
+            >
+              <h1 className="changeText">Change Password:</h1>
+              <input
+                type="password"
+                name="password"
+                onChange={e => setPassword(e.target.value)}
+                placeholder="New Password"
+              />
+              <input
+                type="submit"
+                className="submitButton"
+                placeholder="Save Password"
+              />
+            </form>
           </div>
           <div className="messageContainer">
             {changedPassword && thePasswordMessage ? (
               <p className="passwordMessage">Changed Password Successfully</p>
-            ) : <p></p>}
+            ) : (
+              <p></p>
+            )}
           </div>
-        </form>
         </div>
       </div>
     </div>
