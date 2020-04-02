@@ -21,8 +21,8 @@ module.exports = {
                   link: link,
                   company: company,
                   location: location,
-                  description: description
-                  
+                  description: description,
+                  website: 'ZipRecruiter'
                 });
               }
             });

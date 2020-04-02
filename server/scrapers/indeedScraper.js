@@ -25,7 +25,8 @@ module.exports = {
             company: company,
             location: location,
             description: description,
-            date: date
+            date: date,
+            website: 'Indeed'
           });
         }
       });

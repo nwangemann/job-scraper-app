@@ -26,7 +26,8 @@ module.exports = {
             location: location,
             description: description,
             date: date,
-            logo: logo
+            logo: logo,
+            website: 'LinkedIn'
           });
         }
       });
