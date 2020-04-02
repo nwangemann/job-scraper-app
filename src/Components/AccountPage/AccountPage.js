@@ -47,20 +47,19 @@ function AccountPage() {
   return (
     <div className="outerDiv">
       <div className="accountContainer">
-      
-          <div className="settingDiv">
-            <p className="accountSettings">Account Settings</p>
-            <img
-              onClick={back}
-              alt="returnimg"
-              className="returnImg"
-              src={returnpng}
-            />
-          </div>
-          <div>
-            <h1 className="yourEmail">Your Email:{displayEmail}</h1>
-          </div>
-    
+        <div className="settingDiv">
+          <p className="accountSettings">Account Settings</p>
+          <img
+            onClick={back}
+            alt="returnimg"
+            className="returnImg"
+            src={returnpng}
+          />
+        </div>
+        <div>
+          <h1 className="yourEmail">Your Email:{displayEmail}</h1>
+        </div>
+
         <div className="formDiv">
           <div>
             <form
@@ -107,14 +106,16 @@ function AccountPage() {
                 className="submitButton"
                 placeholder="Save Password"
               />
+              <div className="messageContainer">
+                {changedPassword && thePasswordMessage ? (
+                  <p className="passwordMessage">
+                    Changed Password Successfully
+                  </p>
+                ) : (
+                  <p></p>
+                )}
+              </div>
             </form>
-          </div>
-          <div className="messageContainer">
-            {changedPassword && thePasswordMessage ? (
-              <p className="passwordMessage">Changed Password Successfully</p>
-            ) : (
-              <p></p>
-            )}
           </div>
         </div>
       </div>
