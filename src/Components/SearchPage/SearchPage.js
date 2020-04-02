@@ -29,7 +29,8 @@ function SearchPage() {
 
 
   return (
-    <div>
+    <div className='outermost_div'>
+    <nav>
       <input type="text" onChange={e => setTitle(e.target.value)} placeholder="Job Title" name="title" />
       <input type="text" onChange={e => setLocation(e.target.value)} placeholder="Location" name="location" />
        
@@ -44,6 +45,7 @@ function SearchPage() {
         
       </select>
       <button onClick={search}>Search</button>
+      </nav>
 
       
 
@@ -62,6 +64,7 @@ function SearchPage() {
         null
         }
       </div>
+    
     </div>
   );
 }
