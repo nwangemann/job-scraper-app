@@ -17,7 +17,8 @@ function ScrapeContainer(props) {
       company: body[2],
       location: body[3],
       description: body[4],
-      date: body[5]
+      date: body[5],
+      website: body[6]
     };
     axios
       .post(`/api/listings/${user_id}`, listingBody)
@@ -46,7 +47,7 @@ function ScrapeContainer(props) {
           <button
             onClick={save}
             id={i}
-            value={`${elem.title} ** ${elem.link} ** ${elem.company} ** ${elem.location} ** ${elem.description} ** ${elem.date}`}
+            value={`${elem.title} ** ${elem.link} ** ${elem.company} ** ${elem.location} ** ${elem.description} ** ${elem.date} ** ${elem.website}`}
           >
             Save
           </button>

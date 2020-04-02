@@ -9,6 +9,7 @@ function SavedJobsContainer(props){
           <h5>Location: {elem.location}</h5>
           <h5>Description: {elem.description}</h5>
           <h5>{elem.date}</h5>
+          <h5>From: {elem.website}</h5>
           <button onClick={props.deleteListing} value={elem.jobs_id}>Delete</button>
         </div>
       );

@@ -8,8 +8,8 @@ module.exports = {
     saveListing: async (req, res, next) => {
         const db = req.app.get('db');
         const {user_id} = req.params;
-        const {title, link, company, location, description, date} = req.body
-        const addListing = await db.add_listing(user_id, title, company, description, location, date, link);
+        const {title, link, company, location, description, date, website} = req.body
+        const addListing = await db.add_listing(user_id, title, company, description, location, date, link, website);
         res.status(200).send(addListing)
 
     },
