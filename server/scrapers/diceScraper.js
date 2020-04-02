@@ -4,7 +4,7 @@ const fs = require('fs');
 
 module.exports = {
   diceScrape: async (title, location) => {
-    let nightmare = Nightmare({ show: true });
+    let nightmare = Nightmare({ show: false });
 
     let getData = html => {
       data = [];

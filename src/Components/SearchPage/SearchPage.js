@@ -2,14 +2,18 @@ import React, { useState } from "react";
 import axios from "axios";
 import './SearchPage.css'
 import ScrapeContainer from '../ScrapeContainer/ScrapeContainer'
+import { SemipolarLoading } from 'react-loadingg'; 
 
 function SearchPage() {
   const [scrape, setScrape] = useState([]);
   const [title, setTitle] = useState("");
   const [location, setLocation] = useState("");
   const [selectedJob, setSelectedJob] = useState('indeed')
+  const [loading, setLoading] = useState(false) 
 
   function search() {
+    setScrape([])
+    setLoading(true)
     let body = {
       title: title,
       location: location
@@ -18,9 +22,11 @@ function SearchPage() {
       .post(`/api/${selectedJob}`, body)
       .then(res => {
         setScrape(res.data)
+        setLoading(false)
       })
       .catch(err => console.log(err));
   }
+
 
   return (
     <div>
@@ -42,6 +48,12 @@ function SearchPage() {
       
 
       <div className="scrapeContainerParent">
+      {
+        loading ?
+        <SemipolarLoading color="#F4AF1B" size="large" speed="2"/>
+        : 
+        null
+        }
         
         {
         scrape ? 

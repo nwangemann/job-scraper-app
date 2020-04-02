@@ -5,7 +5,7 @@ const fs = require('fs');
 
 module.exports = {
   indeedScrape: async (title, location) => {
-    let nightmare = Nightmare({ show: true });
+    let nightmare = Nightmare({ show: false });
 
     let getData = html => {
       data = [];
