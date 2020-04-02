@@ -33,6 +33,8 @@ function SearchPage() {
         <option value="indeed">Indeed</option>
         <option value="dice">Dice</option>
         <option value="zr">Zip Recruiter</option>
+        <option value="glassdoor">Glassdoor</option>
+        
       </select>
       <button onClick={search}>Search</button>
 

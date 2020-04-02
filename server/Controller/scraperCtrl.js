@@ -1,6 +1,8 @@
 const {indeedScrape} = require('../scrapers/indeedScraper')
 const {diceScrape} = require('../scrapers/diceScraper')
 const {zrScrape} = require('../scrapers/zrScraper')
+const {glassDoorScrape} = require('../scrapers/glassdoorScraper')
+
 const fs = require('fs');
 
 module.exports = {
@@ -22,6 +24,13 @@ module.exports = {
         const {title, location} = req.body
         let result = await zrScrape(title, location)
         let rawdata = fs.readFileSync('zr_scraped_data.json');
+        let dataObj = JSON.parse(rawdata);
+        res.status(200).send(dataObj);
+    },
+    searchGlassdoor: async (req, res, next) => {
+        const {title, location} = req.body
+        let result = await glassDoorScrape(title, location)
+        let rawdata = fs.readFileSync('glassdoor_scraped_data.json');
         let dataObj = JSON.parse(rawdata);
         res.status(200).send(dataObj);
     }

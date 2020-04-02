@@ -16,7 +16,8 @@ function ScrapeContainer(props) {
       link: body[1],
       company: body[2],
       location: body[3],
-      date: body[4]
+      description: body[4],
+      date: body[5]
     };
     axios
       .post(`/api/listings/${user_id}`, listingBody)

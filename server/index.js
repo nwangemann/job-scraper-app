@@ -3,7 +3,7 @@ const express = require('express');
 const massive = require('massive');
 const session = require('express-session');
 const app = express();
-const { searchZr, searchIndeed, searchDice } = require('./Controller/scraperCtrl')
+const { searchZr, searchIndeed, searchDice, searchGlassdoor } = require('./Controller/scraperCtrl')
 const {getSavedListings, saveListing, deleteListing } = require('./Controller/listingCtrl')
 const {SERVER_PORT, SESSION_SECRET, CONNECTION_STRING} = process.env
 const {editPassword, editEmail, login, registerUser, logout, userSession} = require('./controller/authCtrl')
@@ -42,6 +42,7 @@ app.post('/api/delete/:jobs_id', deleteListing)
 app.post('/api/indeed', searchIndeed);
 app.post('/api/dice', searchDice);
 app.post('/api/zr', searchZr);
+app.post('/api/glassdoor', searchGlassdoor)
 
 
 app.listen(SERVER_PORT, () => console.log(`Running on Server Port ${SERVER_PORT}`));
