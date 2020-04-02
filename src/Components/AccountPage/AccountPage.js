@@ -57,7 +57,7 @@ function AccountPage() {
           />
         </div>
         <div>
-          <h1 className="yourEmail">Your Email:{displayEmail}</h1>
+          <h1 className="yourEmail">Your Email: {displayEmail}</h1>
         </div>
 
         <div className="formDiv">

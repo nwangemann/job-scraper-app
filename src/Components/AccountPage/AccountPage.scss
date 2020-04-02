@@ -31,7 +31,9 @@
 }
 
 .returnImg:hover {
-  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+  // filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+  transform: rotate(180deg);
+  transition-duration: 1s;
 }
 
 .accountContainer {
