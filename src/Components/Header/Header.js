@@ -1,6 +1,6 @@
 import React from "react";
 import {useSelector} from 'react-redux'
-import "./Header.css";
+import "./Header.scss";
 import { Link } from "react-router-dom";
 import SubHeader from './SubHeader'
 

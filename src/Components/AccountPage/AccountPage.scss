@@ -1,7 +1,6 @@
 @import '../../variable.scss';
 
 .outerDiv {
-  // background-color: #666b6e;
   background-color: $color-primary;
   height: 90vh;
   display: flex;
@@ -39,8 +38,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-color: whitesmoke;
-    // background-color: $color-secondary;
+    background-color: $color-third;
     width: 75vw;
     height: 75vh;
     border-radius: 10px;
@@ -65,7 +63,7 @@
   margin: 10px 22px;
   flex-direction: column;
   position: sticky;
-  background-color: #666B6E;
+  background-color: $color-secondary;
   border-radius: 10px;
   position: relative;
   bottom: 20%;
@@ -91,7 +89,7 @@
   justify-content: center;
   margin: 10px 22px;
   flex-direction: column;
-  background-color: #666B6E;
+  background-color: $color-secondary;
   border-radius: 10px;
   position: relative;
   bottom: 25%;

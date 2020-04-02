@@ -1,7 +1,10 @@
+@import '../../variable.scss';
+
+
 header {
     width: 100vw;
     height: 10vh;
-    background-color: #DBEDFF;
+    background-color: $color-secondary;
     display: flex;
     flex-direction: row;
     align-items: center;
