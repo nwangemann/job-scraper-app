@@ -9,7 +9,7 @@ function Header(){
   
     return (
       <div  className="stickyHeader">
-        <Link className="links" to="/">Job Scraper</Link>
+        <Link className="links" to="/">Get Busy</Link>
        
           
         <div>
