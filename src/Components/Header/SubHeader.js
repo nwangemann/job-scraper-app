@@ -3,14 +3,13 @@ import {Link} from 'react-router-dom'
 import axios from 'axios'
 import {useDispatch} from 'react-redux'
 import {logout} from '../../redux/reducer'
-
+import './Header.scss'
 
 
 function SubHeader() {
     const dispatch = useDispatch();
 
     function logOut(){
-        console.log('getting fired')
         axios.get('/auth/logout').catch(err => console.log(err))
         dispatch(logout());
     }

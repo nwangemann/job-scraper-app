@@ -21,7 +21,6 @@ function Header(){
             <Link className="links" to="login">Login</Link>
           }
         </div>
-        
       </header>
     );
 }

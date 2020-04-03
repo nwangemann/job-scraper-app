@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import "./ScrapeContainer.css";
+import "./ScrapeContainer.scss";
 import axios from "axios";
 
 function ScrapeContainer(props) {
@@ -59,6 +59,6 @@ function ScrapeContainer(props) {
     );
   });
 
-  return <div>{mappedScrape}</div>;
+  return <div className="mappedScrapeParentContainer">{mappedScrape}</div>;
 }
 export default ScrapeContainer;

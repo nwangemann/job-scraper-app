@@ -1,17 +1,25 @@
+@import '../../variable.scss';
+
 .listingContainer{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
-    margin: 30px 30px;
+    margin: 20px 30px;
     padding: 30px 30px;
     height: 30vh;
-    width: 30vw;
+    width: 50vw;
     border: 5px inset lightgrey;
     border-radius: 15px;
 }
 
+.mappedScrapeParentContainer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
 #successMessage{
     font-weight: 600;
     color: green;
