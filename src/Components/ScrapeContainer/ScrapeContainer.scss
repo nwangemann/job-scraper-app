@@ -8,12 +8,11 @@
     justify-content: space-evenly;
     margin: 15px 20px;
     padding: 30px 30px;
-    height: 45vh;
+    height: 50vh;
     width: 55vw;
     border: 5px inset lightgrey;
-    background-color: whitesmoke;
+    background-color: $color-third;
     border-radius: 15px;
-    background-color: whitesmoke;
 }
 
 .mappedScrapeParentContainer{
@@ -26,4 +25,8 @@
     font-weight: 600;
     color: green;
     font-size: 18px;
+}
+
+.jobTitle {
+    color: $color-primary
 }
