@@ -5,7 +5,7 @@ function SavedJobsContainer(props){
     const mappedScrape = props.savedList.map((elem, i) => {
       return (
         <div key={i} className="savedListingContainer">
-          <a href={elem.link}>{elem.title}</a>
+          <a className="jobTitle" id="Title" href={elem.link}>{elem.title}</a>
           <h5>Company: {elem.company}</h5>
           <h5>Location: {elem.location}</h5>
           <h5>Description: {elem.description}</h5>
