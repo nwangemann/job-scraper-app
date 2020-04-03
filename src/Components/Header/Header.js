@@ -8,7 +8,7 @@ function Header(){
   const isLoggedIn = useSelector(state => state.isLoggedIn)
   
     return (
-      <header>
+      <div  className="stickyHeader">
         <Link className="links" to="/">Get Busy</Link>
        
           
@@ -21,7 +21,7 @@ function Header(){
             <Link className="links" to="login">Login</Link>
           }
         </div>
-      </header>
+      </div>
     );
 }
 export default Header;
