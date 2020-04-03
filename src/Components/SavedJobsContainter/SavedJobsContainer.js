@@ -4,7 +4,7 @@ import './SavedJobsContainer.scss'
 function SavedJobsContainer(props){
     const mappedScrape = props.savedList.map((elem, i) => {
       return (
-        <div key={i} className="listingContainer">
+        <div key={i} className="savedListingContainer">
           <a href={elem.link}>{elem.title}</a>
           <h5>Company: {elem.company}</h5>
           <h5>Location: {elem.location}</h5>
