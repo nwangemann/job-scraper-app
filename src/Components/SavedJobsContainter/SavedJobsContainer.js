@@ -1,5 +1,5 @@
-import React from 'react'
-import './SavedJobsContainer.scss'
+import React from "react";
+import "./SavedJobsContainer.scss";
 
 function SavedJobsContainer(props){
     const mappedScrape = props.savedList.map((elem, i) => {
@@ -22,4 +22,4 @@ function SavedJobsContainer(props){
         )
 }
 
-export default SavedJobsContainer
+export default SavedJobsContainer;

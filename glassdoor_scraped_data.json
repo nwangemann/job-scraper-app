@@ -1,5 +1,274 @@
 [
   {
+<<<<<<< HEAD
+    "title": " STARA TechnologiesSoftware Engineer",
+    "link": "/partner/jobListing.htm?pos=101&ao=941197&s=149&guid=000001713d4c64c3833fd375162b59f8&src=GD_JOB_AD&t=SRFJ&extid=4&exst=OL&ist=&ast=OL&vt=w&slr=true&ea=1&cs=1_4ca40424&cb=1585871349648&jobListingId=3497750935",
+    "company": " STARA Technologies",
+    "location": "Chandler, AZ",
+    "description": " $75k-$90k",
+    "date": " 14d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " iSolved HCMSOFTWARE ENGINEER",
+    "link": "/partner/jobListing.htm?pos=102&ao=918299&s=149&guid=000001713d4c64c3833fd375162b59f8&src=GD_JOB_AD&t=SRFJ&extid=4&exst=OL&ist=&ast=OL&vt=w&slr=true&ea=1&cs=1_d8c9580f&cb=1585871349649&jobListingId=3519495776",
+    "company": " iSolved HCM",
+    "location": "Phoenix, AZ",
+    "description": " $61k-$126k",
+    "date": " 26d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " Empire-CATSenior Application Developer",
+    "link": "/partner/jobListing.htm?pos=101&ao=955326&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&ea=1&cs=1_7bfba9f5&cb=1585871349650&jobListingId=3529343395",
+    "company": " Empire-CAT",
+    "location": "Mesa, AZ",
+    "description": " $52k-$91k",
+    "date": " 17d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " GoDaddySr. Software Engineer - Cloud Platforms",
+    "link": "/partner/jobListing.htm?pos=102&ao=116611&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&cs=1_0ad5e59d&cb=1585871349652&jobListingId=3543423275",
+    "company": " GoDaddy",
+    "location": "Scottsdale, AZ",
+    "description": " $69k-$135k",
+    "date": " 2d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " KeapSoftware Engineer - Back End",
+    "link": "/partner/jobListing.htm?pos=103&ao=835874&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&cs=1_03c11b77&cb=1585871349653&jobListingId=3100549885",
+    "company": " Keap",
+    "location": "Chandler, AZ",
+    "description": " $59k-$94k",
+    "date": " 9d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " Kryterion IncSoftware Engineer II",
+    "link": "/partner/jobListing.htm?pos=104&ao=852078&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&ea=1&cs=1_a5d0843e&cb=1585871349654&jobListingId=3442835007",
+    "company": " Kryterion Inc",
+    "location": "Phoenix, AZ",
+    "description": " $63k-$130k",
+    "date": " 22d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " Willis Towers WatsonSenior Software Engineer Customer Engagement",
+    "link": "/partner/jobListing.htm?pos=105&ao=787337&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&cs=1_2768ce03&cb=1585871349655&jobListingId=3470211505",
+    "company": " Willis Towers Watson",
+    "location": "Tempe, AZ",
+    "description": " $70k-$144k",
+    "date": " 15d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " Schmidt & HeinzmannRobotics Software Engineer",
+    "link": "/partner/jobListing.htm?pos=106&ao=874454&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&ea=1&cs=1_c41aa1cf&cb=1585871349656&jobListingId=3425827720",
+    "company": " Schmidt & Heinzmann",
+    "location": "Mesa, AZ",
+    "description": "",
+    "date": " 16d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " GoDaddySoftware Development Engineer - Marketing Technologies Platform",
+    "link": "/partner/jobListing.htm?pos=107&ao=116611&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&cs=1_cedd4b46&cb=1585871349657&jobListingId=3492311163",
+    "company": " GoDaddy",
+    "location": "Scottsdale, AZ",
+    "description": " $51k-$105k",
+    "date": " 19d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " Silicon Valley BankSoftware Engineer II",
+    "link": "/partner/jobListing.htm?pos=108&ao=818422&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&cs=1_a34f0e75&cb=1585871349658&jobListingId=3531056847",
+    "company": " Silicon Valley Bank",
+    "location": "Tempe, AZ",
+    "description": " $83k-$166k",
+    "date": " 16d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " Digital Air StrikeSr. Database Engineer",
+    "link": "/partner/jobListing.htm?pos=109&ao=845160&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&ea=1&cs=1_07a0f435&cb=1585871349659&jobListingId=3496550203",
+    "company": " Digital Air Strike",
+    "location": "Scottsdale, AZ",
+    "description": " $110k-$240k",
+    "date": " 15d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " IntraEdgeSoftware Engineer",
+    "link": "/partner/jobListing.htm?pos=110&ao=352788&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&cs=1_f68f697b&cb=1585871349660&jobListingId=3530101640",
+    "company": " IntraEdge",
+    "location": "Phoenix, AZ",
+    "description": " $45k-$93k",
+    "date": " 17d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " Willis Towers WatsonUI Engineer",
+    "link": "/partner/jobListing.htm?pos=111&ao=787337&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&cs=1_f8babe6d&cb=1585871349661&jobListingId=3516060619",
+    "company": " Willis Towers Watson",
+    "location": "Tempe, AZ",
+    "description": " $44k-$121k",
+    "date": " 24hr",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " IGNWSoftware Engineer",
+    "link": "/partner/jobListing.htm?pos=112&ao=916774&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&cs=1_59c31def&cb=1585871349662&jobListingId=3523397755",
+    "company": " IGNW",
+    "location": "Phoenix, AZ",
+    "description": "",
+    "date": " 22d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " ShutterflySenior Full Stack Software Engineer (Java/Javascript)",
+    "link": "/partner/jobListing.htm?pos=113&ao=874813&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&cs=1_b25a1113&cb=1585871349663&jobListingId=3541163374",
+    "company": " Shutterfly",
+    "location": "Tempe, AZ",
+    "description": " $51k-$94k",
+    "date": " 6d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " Silicon Valley BankSoftware Test Engineer II",
+    "link": "/partner/jobListing.htm?pos=114&ao=818422&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&cs=1_558d54ff&cb=1585871349664&jobListingId=3540088993",
+    "company": " Silicon Valley Bank",
+    "location": "Tempe, AZ",
+    "description": " $73k-$118k",
+    "date": " 7d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " ShutterflySenior Software Engineer (Java/Spring Boot)",
+    "link": "/partner/jobListing.htm?pos=115&ao=235066&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&cs=1_a1393c6c&cb=1585871349665&jobListingId=3542651987",
+    "company": " Shutterfly",
+    "location": "Tempe, AZ",
+    "description": " $66k-$131k",
+    "date": " 3d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " InEightSolution Engineer",
+    "link": "/partner/jobListing.htm?pos=116&ao=849357&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&cs=1_cc8fb735&cb=1585871349666&jobListingId=3516125205",
+    "company": " InEight",
+    "location": "Scottsdale, AZ",
+    "description": " $45k-$99k",
+    "date": " 24hr",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " DatapriseService Desk Engineer",
+    "link": "/partner/jobListing.htm?pos=117&ao=842427&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&ea=1&cs=1_d0ae2312&cb=1585871349667&jobListingId=3012819008",
+    "company": " Dataprise",
+    "location": "Scottsdale, AZ",
+    "description": " $14-$42",
+    "date": " 12d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " KeapSoftware Engineer - Full Stack",
+    "link": "/partner/jobListing.htm?pos=118&ao=835874&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&cs=1_87784005&cb=1585871349668&jobListingId=3100549874",
+    "company": " Keap",
+    "location": "Chandler, AZ",
+    "description": " $59k-$104k",
+    "date": " 9d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " IGNWSoftware Engineer (Big Data)",
+    "link": "/partner/jobListing.htm?pos=119&ao=916774&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&cs=1_2eb7f332&cb=1585871349669&jobListingId=3530223333",
+    "company": " IGNW",
+    "location": "Phoenix, AZ",
+    "description": "",
+    "date": " 16d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " Quicken LoansSenior Software Engineer",
+    "link": "/partner/jobListing.htm?pos=120&ao=226254&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&cs=1_a70e3296&cb=1585871349670&jobListingId=3490405275",
+    "company": " Quicken Loans",
+    "location": "Phoenix, AZ",
+    "description": " $56k-$113k",
+    "date": " 21d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " MassMutualStorage Engineer",
+    "link": "/partner/jobListing.htm?pos=121&ao=924595&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&cs=1_c351e8e6&cb=1585871349671&jobListingId=3501566016",
+    "company": " MassMutual",
+    "location": "Phoenix, AZ",
+    "description": " $86k-$151k",
+    "date": " 10d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " Silicon Valley BankPrincipal Software Engineer",
+    "link": "/partner/jobListing.htm?pos=122&ao=818422&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&cs=1_914bbec7&cb=1585871349673&jobListingId=3543577358",
+    "company": " Silicon Valley Bank",
+    "location": "Tempe, AZ",
+    "description": " $87k-$174k",
+    "date": " 2d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " HoneywellSoftware Engineer",
+    "link": "/partner/jobListing.htm?pos=123&ao=90186&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&cs=1_b7e0b2a2&cb=1585871349674&jobListingId=3447775573",
+    "company": " Honeywell",
+    "location": "Phoenix, AZ",
+    "description": " $58k-$96k",
+    "date": " 16d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " Choice HotelsSenior Software Engineer",
+    "link": "/partner/jobListing.htm?pos=124&ao=933251&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&cs=1_e64a6982&cb=1585871349675&jobListingId=3187750821",
+    "company": " Choice Hotels",
+    "location": "Phoenix, AZ",
+    "description": " $61k-$126k",
+    "date": " 22d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " BOEINGSoftware Engineer - Entry Level",
+    "link": "/partner/jobListing.htm?pos=125&ao=465123&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&cs=1_a81d43c0&cb=1585871349676&jobListingId=3543661580",
+    "company": " BOEING",
+    "location": "Mesa, AZ",
+    "description": " $48k-$91k",
+    "date": " 1d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " KeapSoftware Engineer - Front End",
+    "link": "/partner/jobListing.htm?pos=126&ao=835874&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&cs=1_8b183f92&cb=1585871349677&jobListingId=3100549869",
+    "company": " Keap",
+    "location": "Chandler, AZ",
+    "description": " $47k-$115k",
+    "date": " 9d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " CarvanaSoftware Engineer",
+    "link": "/partner/jobListing.htm?pos=127&ao=967439&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&cs=1_9e7b9349&cb=1585871349678&jobListingId=3524396590",
+    "company": " Carvana",
+    "location": "Tempe, AZ",
+    "description": " $42k-$88k",
+    "date": " 22d",
+    "website": "Glassdoor"
+  },
+  {
+    "title": " Schmidt & HeinzmannPLC/Software Engineer",
+    "link": "/partner/jobListing.htm?pos=128&ao=874454&s=58&guid=000001713d4c64c390d3d2613fc82484&src=GD_JOB_AD&t=SR&extid=1&exst=OL&ist=&ast=OL&vt=w&slr=true&ea=1&cs=1_a306363e&cb=1585871349679&jobListingId=3425831693",
+    "company": " Schmidt & Heinzmann",
+    "location": "Mesa, AZ",
+    "description": "",
+    "date": " 16d",
+=======
     "title": " Choice HotelsWeb Developer 2",
     "link": "/partner/jobListing.htm?pos=101&ao=933251&s=149&guid=000001713d4a8b1abd22981dac6fc4f8&src=GD_JOB_AD&t=SRFJ&extid=4&exst=OL&ist=&ast=OL&vt=w&slr=true&cs=1_543b9d84&cb=1585871227980&jobListingId=3147653442",
     "company": " Choice Hotels",
@@ -267,6 +536,7 @@
     "location": "Phoenix, AZ",
     "description": "",
     "date": " 1d",
+>>>>>>> ac8e994b8d0bd4b9e78d7633f6089b073ae14f20
     "website": "Glassdoor"
   }
 ]
