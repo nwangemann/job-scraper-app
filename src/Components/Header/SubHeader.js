@@ -10,7 +10,6 @@ function SubHeader() {
     const dispatch = useDispatch();
 
     function logOut(){
-        console.log('getting fired')
         axios.get('/auth/logout').catch(err => console.log(err))
         dispatch(logout());
     }
