@@ -21,7 +21,7 @@ function Header(){
             <Link className="links" to="login">Login</Link>
           }
         </div>
-      </header>
+      </div>
     );
 }
 export default Header;
