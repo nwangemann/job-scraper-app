@@ -1,12 +1,16 @@
-header {
+@import '../../variable.scss';
+
+.stickyHeader {
     width: 100vw;
     height: 10vh;
-    background-color: #DBEDFF;
+    background-color: $color-secondary;
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* justify-content: center; */
-}
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
 
 .links {
     text-decoration: none;

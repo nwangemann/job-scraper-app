@@ -12,6 +12,8 @@ CREATE TABLE jobs (
     description TEXT,
     location TEXT,
     link TEXT,
+    date TEXT,
+    website TEXT,
     user_id INT REFERENCES users(user_id)
 );
 

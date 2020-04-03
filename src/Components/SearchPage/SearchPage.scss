@@ -1,0 +1,32 @@
+@import '../../variable.scss';
+
+.scrapeContainerParent{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+.contentParent{
+	display: flex;
+	align-items: center;
+	width: 100vw;
+}
+.sticky {
+    position: fixed;
+    top: 10vh;
+	width: 100vw;
+}
+
+.outermost_div {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+nav {
+    width: 100vw;
+    height: 8vh;
+    background-color: $color-third;
+}

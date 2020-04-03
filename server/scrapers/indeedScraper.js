@@ -5,7 +5,7 @@ const fs = require('fs');
 
 module.exports = {
   indeedScrape: async (title, location) => {
-    let nightmare = Nightmare({ show: true });
+    let nightmare = Nightmare({ show: false });
 
     let getData = html => {
       data = [];
@@ -25,7 +25,8 @@ module.exports = {
             company: company,
             location: location,
             description: description,
-            date: date
+            date: date,
+            website: 'Indeed'
           });
         }
       });

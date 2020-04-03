@@ -4,7 +4,7 @@ const fs = require('fs');
 
 module.exports = {
     zrScrape: async (title, location) => {
-        let nightmare = Nightmare({ show: true })
+        let nightmare = Nightmare({ show: false })
 
         let getData = html => {
             data = [];
@@ -21,8 +21,8 @@ module.exports = {
                   link: link,
                   company: company,
                   location: location,
-                  description: description
-                  
+                  description: description,
+                  website: 'ZipRecruiter'
                 });
               }
             });
