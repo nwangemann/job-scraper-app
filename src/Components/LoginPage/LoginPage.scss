@@ -1,1 +1,17 @@
 @import '../../variable.scss';
+
+
+#L_Rcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 15px 20px;
+    padding: 30px 30px;
+    border: 5px inset lightgrey;
+    background-color: $color-third;
+    border-radius: 15px;
+    height: 30vh;
+    width: 50vw;
+}

@@ -27,8 +27,9 @@ function Login() {
       });
   }
   return (
-    <div>
-      This is the login component
+    <div className="accountContainer" id="L_Rcontainer">
+      
+      <p id="Title">Login</p>
       <form
         onSubmit={e => {
           e.preventDefault();
@@ -48,12 +49,13 @@ function Login() {
           placeholder="Password"
         ></input>
         {loggedInFailed ? <p>Incorrect Email and/or Password</p> : null}
-        <input type="submit" placeholder="Login" value="login" />
+        <input type="submit" placeholder="Login" value="Login" />
       </form>
       <button onClick={() => dispatch(switchToRegister())}>
         New User? Register
       </button>
-    </div>
+      </div>
+    
   );
 }
 

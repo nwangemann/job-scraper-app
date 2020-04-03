@@ -30,8 +30,8 @@ function Register() {
   }
 
   return (
-    <div>
-      This is the register component
+    <div id="L_Rcontainer">
+      <p id="Title">Register Now</p>
       <form
         onSubmit={e => {
           e.preventDefault();
