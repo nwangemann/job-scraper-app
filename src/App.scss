@@ -1,6 +1,8 @@
 @import './variable.scss';
 
-
+body{
+  background-color: $color-primary;
+}
 
 .content{
   margin-top: 14vh;

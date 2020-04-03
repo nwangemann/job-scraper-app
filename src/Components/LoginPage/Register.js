@@ -57,9 +57,7 @@ function Register() {
         ) : null}
         <input type="submit" placeholder="Register" value="Register" />
       </form>
-      <button onClick={() => dispatch(switchToLogin())}>
-        Return to Login
-      </button>
+      <button onClick={() => dispatch(switchToLogin())}>Return to Login</button>
     </div>
   );
 }

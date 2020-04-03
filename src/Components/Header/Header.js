@@ -10,8 +10,6 @@ function Header(){
     return (
       <div  className="stickyHeader">
         <Link className="links" to="/">Job Scraper</Link>
-       
-          
         <div>
           {
             isLoggedIn
@@ -21,7 +19,6 @@ function Header(){
             <Link className="links" to="login">Login</Link>
           }
         </div>
-        
       </div>
     );
 }

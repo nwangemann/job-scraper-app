@@ -1,15 +1,15 @@
-import React from 'react';
-import './App.scss';
-import './reset.css'
-import routes from './routes'
-import Header from './Components/Header/Header'
+import React from "react";
+import "./App.scss";
+import "./reset.css";
+import routes from "./routes";
+import Header from "./Components/Header/Header";
 
 function App() {
   return (
     <div className="App">
-     <Header />
+      <Header />
       <div className="content">
-      {routes}
+        {routes}
       </div>
     </div>
   );
