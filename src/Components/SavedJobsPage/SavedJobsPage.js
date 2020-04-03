@@ -30,7 +30,7 @@ function SavedJobsPage() {
 
   return (
     <div>
-      Saved Jobs Page
+      <p className="savedJobs">Saved Jobs</p> 
       {savedList ? <SavedJobsContainer savedList={savedList} deleteListing={deleteListing} /> : null}
     </div>
   );
