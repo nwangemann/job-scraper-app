@@ -1,1 +1,16 @@
 @import '../../variable.scss';
+
+.savedListingContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 20px 30px;
+    padding: 30px 20px;
+    height: 50vh;
+    width: 60vw;
+    border: 5px inset lightgrey;
+    border-radius: 15px;
+    background-color: whitesmoke;
+}
