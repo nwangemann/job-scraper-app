@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import './SearchPage.css'
+import './SearchPage.scss'
 import ScrapeContainer from '../ScrapeContainer/ScrapeContainer'
 import { SemipolarLoading } from 'react-loadingg'; 
 
@@ -30,7 +30,10 @@ function SearchPage() {
 
   return (
     <div className='outermost_div'>
-    <nav>
+      <div className="contentParent">
+
+ 
+    <nav className="sticky">
       <input type="text" onChange={e => setTitle(e.target.value)} placeholder="Job Title" name="title" />
       <input type="text" onChange={e => setLocation(e.target.value)} placeholder="Location" name="location" />
        
@@ -47,7 +50,7 @@ function SearchPage() {
       <button onClick={search}>Search</button>
       </nav>
 
-      
+      </div>
 
       <div className="scrapeContainerParent">
       {

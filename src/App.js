@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import './reset.css'
 import routes from './routes'
 import Header from './Components/Header/Header'
@@ -7,9 +7,10 @@ import Header from './Components/Header/Header'
 function App() {
   return (
     <div className="App">
-     <Header/>
-   
+     <Header />
+      <div className="content">
       {routes}
+      </div>
     </div>
   );
 }

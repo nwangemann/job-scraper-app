@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import './LoginPage.scss'
 import {submitUser, switchToRegister, loggedIn } from '../../redux/reducer'
 import { useDispatch } from 'react-redux'
 import {useHistory} from 'react-router-dom'

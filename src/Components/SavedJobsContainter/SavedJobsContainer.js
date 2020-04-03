@@ -1,4 +1,5 @@
 import React from 'react'
+import './SavedJobsContainer.scss'
 
 function SavedJobsContainer(props){
     const mappedScrape = props.savedList.map((elem, i) => {
