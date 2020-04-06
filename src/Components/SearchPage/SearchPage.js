@@ -51,6 +51,8 @@ function SearchPage() {
             <option value="zr">Zip Recruiter</option>
             <option value="glassdoor">Glassdoor</option>
             <option value="linkedin">LinkedIn</option>
+            <option value="usajobs">USAJOBS</option>
+
           </select>
           <button onClick={search}>Search</button>
         </nav>
