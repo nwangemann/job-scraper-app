@@ -1,0 +1,12 @@
+@import './variable.scss';
+
+body{
+  background-color: $color-primary;
+}
+
+.content{
+  margin-top: 14vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

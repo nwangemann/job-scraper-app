@@ -1,34 +1,69 @@
-import React, { useState } from 'react'
-import axios from 'axios'
+import React, { useState } from "react";
+import axios from "axios";
+import "./SearchPage.scss";
+import ScrapeContainer from "../ScrapeContainer/ScrapeContainer";
+import { SemipolarLoading } from "react-loadingg";
 
-function SearchPage (){
-    const [scrape, setScrape] = useState([])
+function SearchPage() {
+  const [scrape, setScrape] = useState([]);
+  const [title, setTitle] = useState("");
+  const [location, setLocation] = useState("");
+  const [selectedJob, setSelectedJob] = useState("indeed");
+  const [loading, setLoading] = useState(false);
 
-    function getScrape() {
-        axios.get('/api/scrape').then(res => {
-            console.log('what we have to work with', res.data.theData)
-            let result = res.data.theData[0]
-            setScrape(result)
-        }).catch(err => console.log(err))
-    }
+  function search() {
+    setScrape([]);
+    setLoading(true);
+    let body = {
+      title: title,
+      location: location
+    };
+    axios
+      .post(`/api/${selectedJob}`, body)
+      .then(res => {
+        setScrape(res.data);
+        setLoading(false);
+      })
+      .catch(err => console.log(err));
+  }
 
+  return (
+    <div className="outermost_div">
+      <div className="contentParent">
+        <nav className="sticky">
+          <input
+            type="text"
+            onChange={e => setTitle(e.target.value)}
+            placeholder="Job Title"
+            name="title"
+          />
+          <input
+            type="text"
+            onChange={e => setLocation(e.target.value)}
+            placeholder="Location"
+            name="location"
+          />
 
-        const mappedScrape = scrape.map((elem, i) => {
-            return <div key={i} >
-                <a href={elem.link}>{elem.title}</a>
+          <label>Choose where you want to Search:</label>
+          <select onChange={e => setSelectedJob(e.target.value)} id="jobs">
+            <option value="indeed">Indeed</option>
+            <option value="dice">Dice</option>
+            <option value="zr">Zip Recruiter</option>
+            <option value="glassdoor">Glassdoor</option>
+            <option value="linkedin">LinkedIn</option>
+          </select>
+          <button onClick={search}>Search</button>
+        </nav>
+      </div>
 
-                <h4>{elem.company}</h4>
-                <h4>{elem.location}</h4>
-                <h4>{elem.description}</h4>
-                <h4>{elem.date}</h4>
-            </div>
-        })
-        return (
-            <div>
-                This is the Search Page
-                <button onClick={getScrape}>Scrape</button>
-                {mappedScrape}
-            </div>
-        )
+      <div className="scrapeContainerParent">
+        {loading ? (
+          <SemipolarLoading color="#F4AF1B" size="large" speed="2" />
+        ) : null}
+
+        {scrape ? <ScrapeContainer scrape={scrape} /> : null}
+      </div>
+    </div>
+  );
 }
-export default SearchPage
+export default SearchPage;

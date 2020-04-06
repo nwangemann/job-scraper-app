@@ -1,0 +1,149 @@
+@import '../../variable.scss';
+
+
+.outerDiv {
+  background-color: $color-primary;
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.settingDiv{
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  height: 20%;
+  padding: 10px;
+}
+
+.accountSettings{
+  font-size: 50px;
+  text-decoration: underline;
+  font-family: 'Abel', sans-serif;
+  position: relative;
+  top: 10px;
+}
+
+.returnImg {
+  width: 70px;
+  height: 70px;
+}
+
+.returnImg:hover {
+  transform: rotate(180deg);
+  transition-duration: 1s;
+}
+
+.accountContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: $color-third;
+    width: 75vw;
+    height: 75vh;
+    border-radius: 10px;
+    flex-direction: column;
+  }
+
+.formDiv{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.emailForm {
+  height: 25vh;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 22px;
+  flex-direction: column;
+  position: sticky;
+  background-color: $color-secondary;
+  border-radius: 10px;
+  position: relative;
+  bottom: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.emailForm:hover {
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+}
+
+.accountInput{
+  padding: 4px;
+  border-radius: 5px;
+  margin: 2px 5px;
+  width: 50%;
+}
+
+.passwordForm {
+  height: 25vh;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 22px;
+  flex-direction: column;
+  background-color: $color-secondary;
+  border-radius: 10px;
+  position: relative;
+  bottom: 25%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.passwordForm:hover {
+  box-shadow: 0 10px 20px 0px rgba(0,0,0,0.2);
+}
+
+.messageContainer {
+  height: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.passwordMessage {
+  color: green;
+  -webkit-animation: fadeinout 2s linear forwards;
+  animation: fadeinout 2s linear forwards;
+}
+.submitButton{
+  border-radius: 10px;
+  width: 60px;
+  height: 25px;
+  font-weight: 600;
+  margin: 15px 5px;
+}
+.yourEmail{
+  font-size: 25px;
+  font-weight: 800;
+  font-family: 'Abel', sans-serif;
+  position: relative;
+  top: 30px;
+}
+
+
+.changeText{
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Abel', sans-serif;
+  margin: 15px 5px;
+}
+
+@-webkit-keyframes fadeinout {
+    0%,100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+  
+  @keyframes fadeinout {
+    0%,100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
