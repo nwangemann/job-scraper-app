@@ -33,7 +33,8 @@ module.exports = {
         return data;
       };
       let final = await nightmare
-        .goto(`https://www.usajobs.gov/Search?jt=${title}&l=${location}`)
+        // .goto(`https://www.usajobs.gov/Search?jt=${title}&l=${location}`) 
+        .goto(`https://www.usajobs.gov/Search/?l=${location}&p=1&k=${title}`) 
         .wait('body')
         .evaluate(() => document.querySelector("body").innerHTML)
         .end()

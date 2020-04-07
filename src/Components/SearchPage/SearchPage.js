@@ -55,6 +55,8 @@ function SearchPage() {
             <option value="zr">Zip Recruiter</option>
             <option value="glassdoor">Glassdoor</option>
             <option value="linkedin">LinkedIn</option>
+            {/* <option value="usajobs">usajobs</option> */}
+            
           </select>
           <button className="searchElement searchButton" onClick={search}>Search</button>
           </div>
