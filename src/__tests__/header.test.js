@@ -14,24 +14,24 @@ afterEach(() => {
   container = null;
 });
 
-function Account(props) {
+function Header(props) {
   const [text, setText] = useState("");
   function handleClick() {
-    setText("PROCEED TO ACCOUNT");
+    setText("PROCEED TO HEADER");
   }
   return <button onClick={handleClick}>{text || props.text}</button>;
 }
 
-describe("Account component", () => {
+describe("Header component", () => {
   test("it shows the expected text when clicked", () => {
     act(() => {
-      ReactDOM.render(<Account text="SUBSCRIBE TO BASIC" />, container);
+      ReactDOM.render(<Header text="SUBSCRIBE TO BASIC" />, container);
     });
     const button = container.getElementsByTagName("button")[0];
     expect(button.textContent).toBe("SUBSCRIBE TO BASIC");
     act(() => {
       button.dispatchEvent(new MouseEvent("click", { bubbles: true }));
     });
-    expect(button.textContent).toBe("PROCEED TO ACCOUNT");
+    expect(button.textContent).toBe("PROCEED TO HEADER");
   });
 });
