@@ -7,3 +7,11 @@
     color: $color-secondary;
     text-decoration: underline;
   }
+
+  .savedJobsParentContainer{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+  }

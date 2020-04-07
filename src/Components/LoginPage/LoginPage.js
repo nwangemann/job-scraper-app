@@ -6,7 +6,7 @@ import Register from './Register'
 function LoginPage(){
     const loginView = useSelector(state => state.loginView)
         return (
-            <div>
+            <div className="loginPageContainer">
                 {
                     loginView 
                     ?
