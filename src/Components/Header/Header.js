@@ -9,9 +9,11 @@ function Header(){
   
     return (
       <div  className="stickyHeader">
-        <Link className="links" id="Title" to="/">Get Busy</Link>
-       
-          
+        <div className="headerEnclosure">    
+        <div className="titleText">
+          <Link className="links" id="Title" to="/">Get Busy</Link>
+        </div>
+         
         <div>
           {
             isLoggedIn
@@ -20,6 +22,7 @@ function Header(){
             :
             <Link className="links" to="login">Login</Link>
           }
+        </div>
         </div>
       </div>
     );
