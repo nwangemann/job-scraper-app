@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import {useSelector, useDispatch} from 'react-redux'
 import axios from "axios";
 import "./SearchPage.scss";
+import { submitUser, loggedIn } from "../../redux/reducer";
 import ScrapeContainer from "../ScrapeContainer/ScrapeContainer";
 import { SemipolarLoading } from "react-loadingg";
+
 
 function SearchPage() {
   const [scrape, setScrape] = useState([]);
@@ -10,6 +13,21 @@ function SearchPage() {
   const [location, setLocation] = useState("");
   const [selectedJob, setSelectedJob] = useState("indeed");
   const [loading, setLoading] = useState(false);
+  const user = useSelector(state => state.user);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const userPull = localStorage.getItem("user")
+    console.log(userPull)
+    if (userPull){
+      dispatch(submitUser(JSON.parse(userPull)));
+      dispatch(loggedIn());
+    }
+  }, [])
+  
+  useEffect(() => {
+    localStorage.setItem("user", JSON.stringify(user))
+  })
 
   function search() {
     setScrape([]);

@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { submitUser, loggedIn } from "../../redux/reducer";
 import "./AccountPage.scss";
 import returnpng from "./return_arrow.png";
 
@@ -13,8 +14,22 @@ function AccountPage() {
   const [displayEmail, setDisplayEmail] = useState(yourEmail);
   const [changedPassword, setChangedPassword] = useState(false);
   const [thePasswordMessage, setThePasswordMessage] = useState(false);
-
+  const user = useSelector(state => state.user);
+  const dispatch = useDispatch();
   const history = useHistory();
+
+  useEffect(() => {
+    const userPull = localStorage.getItem("user")
+    console.log(userPull)
+    if (userPull){
+      dispatch(submitUser(JSON.parse(userPull)));
+      dispatch(loggedIn());
+    }
+  }, [])
+  
+  useEffect(() => {
+    localStorage.setItem("user", JSON.stringify(user))
+  })
 
   function changeEmail() {
     let body = { email: email };

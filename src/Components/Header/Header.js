@@ -11,7 +11,7 @@ function Header(){
       <div  className="stickyHeader">
         <div className="headerEnclosure">    
         <div className="titleText">
-          <Link className="links" id="Title" to="/">Get Busy</Link>
+          <Link id="Title" to="/">Get Busy</Link>
         </div>
          
         <div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { submitUser, loggedIn } from "../../redux/reducer";
 import axios from "axios";
 import './SavedJobsPage.scss'
 import SavedJobsContainer from '../SavedJobsContainter/SavedJobsContainer'
@@ -7,10 +8,37 @@ import SavedJobsContainer from '../SavedJobsContainter/SavedJobsContainer'
 function SavedJobsPage() {
   const [savedList, setSavedList] = useState("");
   const user_id = useSelector(state => state.user.user_id);
+  const user = useSelector(state => state.user);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const userPull = localStorage.getItem("user")
+    console.log(userPull)
+    if (userPull){
+      dispatch(submitUser(JSON.parse(userPull)));
+      dispatch(loggedIn());
+    }
+  }, [])
+  
+  useEffect(() => {
+    localStorage.setItem("user", JSON.stringify(user))
+  })
 
   useEffect(() => {
     getListings()
   });
+
+  useEffect(() => {
+    const pullback = localStorage.getItem("my-list")
+    if (pullback){
+      setSavedList(JSON.parse(pullback))
+    }
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem("my-list", JSON.stringify(savedList))
+  })
+
 
   function getListings(){
     axios.get(`/api/listings/${user_id}`).then(res => {
