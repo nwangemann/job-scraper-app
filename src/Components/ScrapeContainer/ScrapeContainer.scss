@@ -6,11 +6,12 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
-    margin: 15px 20px;
+    margin: 0px 20px;
+    margin-top: 20px;
     padding: 30px 30px;
     height: 50vh;
     width: 55vw;
-    border: 5px inset lightgrey;
+    border: 5px outset $color-third;
     background-color: $color-third;
     border-radius: 15px;
 }
@@ -20,7 +21,10 @@
     width: 100%;
     align-items: center;
     flex-direction: column;
+    overflow: scroll;
+    margin-top: 2vh;
 }
+
 #successMessage{
     font-weight: 600;
     color: green;

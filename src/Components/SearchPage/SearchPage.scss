@@ -4,29 +4,88 @@
     width: 100vw;
     height: 90vh;
     display: flex;
-    justify-content: center;
+	justify-content: center;
+	position: sticky;
+	top: 0;
 }
 .contentParent{
 	display: flex;
-	align-items: center;
-	width: 100vw;
+	align-items: flex-end;
+	width: 60vw;
+	height: 35svh;
+	margin-top: 15px;
+	position: sticky;
+	top: 15vh;
+	bottom: 0;
+	z-index: 3;
+	background-color: $color-primary;
 }
 .sticky {
-    position: fixed;
-    top: 10vh;
 	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+	// box-shadow: 0 1px 12px 1px $color-secondary;
+}
+
+.dropdownParent{
+	display: flex;
+	align-items: center;
+	margin: 0px 5px;
+}
+.inputParent{
+	display: flex;
+	justify-content: space-around;
+	margin: 0px 5px;
+}
+
+.searchElement{
+	border: 1px solid $color-primary;
+	height: 25px;
+	border-radius: 5px;
+	font-family: $font-family-Abel;
+	font-size: 15px;
+	padding-left: 5px;
+}
+
+.searchButton{
+	margin: 15px;
+	color: $color-secondary;
+	background-color: $color-primary;
+	border: 1px solid $color-secondary;
+	font-size: 15px;
+	height: 35px;
+
+	font-weight: 600;
 }
 
 .outermost_div {
-	height: 100vh;
+	height: auto;
 	width: 100vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	position: sticky;
+	top: 15vh;
+	margin-top: -5vh;
 }
 nav {
-    width: 100vw;
-    height: 8vh;
-    background-color: $color-third;
+    height: 12vh;
+	background-color: $color-secondary;
+	border: 6px outset $color-secondary;
+	border-radius: 15px;
+	margin-top: 10px;
+	input{
+		margin: 0 4px;
+		border-radius: 2px;
+	}
+	
+}
+.searchText{
+	font-family: $font-family-Abel;
+	margin: 0px 10px;
+	font-weight: 500;
+	font-size: 18px;
 }

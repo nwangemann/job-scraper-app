@@ -31,28 +31,33 @@ function SearchPage() {
     <div className="outermost_div">
       <div className="contentParent">
         <nav className="sticky">
+          <div className="inputParent">
           <input
             type="text"
             onChange={e => setTitle(e.target.value)}
             placeholder="Job Title"
             name="title"
+            className="searchElement"
           />
           <input
             type="text"
             onChange={e => setLocation(e.target.value)}
             placeholder="Location"
             name="location"
+            className="searchElement"
           />
-
-          <label>Choose where you want to Search:</label>
-          <select onChange={e => setSelectedJob(e.target.value)} id="jobs">
+        </div>
+        <div className="dropdownParent">
+          <label className="searchText" >Choose where you want to Search:</label>
+          <select className="searchElement" onChange={e => setSelectedJob(e.target.value)} id="jobs">
             <option value="indeed">Indeed</option>
             <option value="dice">Dice</option>
             <option value="zr">Zip Recruiter</option>
             <option value="glassdoor">Glassdoor</option>
             <option value="linkedin">LinkedIn</option>
           </select>
-          <button onClick={search}>Search</button>
+          <button className="searchElement searchButton" onClick={search}>Search</button>
+          </div>
         </nav>
       </div>
 

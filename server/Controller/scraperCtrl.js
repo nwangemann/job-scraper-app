@@ -3,6 +3,7 @@ const {diceScrape} = require('../scrapers/diceScraper')
 const {zrScrape} = require('../scrapers/zrScraper')
 const {glassDoorScrape} = require('../scrapers/glassdoorScraper')
 const {linkedinScrape} = require('../scrapers/linkedinScraper')
+const {usajobsScrape} = require('../scrapers/usajobsScraper')
 
 const fs = require('fs');
 
@@ -39,6 +40,13 @@ module.exports = {
         const {title, location} = req.body
         let result = await linkedinScrape(title, location)
         let rawdata = fs.readFileSync('linkedin_scraped_data.json');
+        let dataObj = JSON.parse(rawdata);
+        res.status(200).send(dataObj);
+    },
+    searchUsajobs: async (req, res, next) => {
+        const {title, location} = req.body
+        let result = await usajobsScrape(title, location)
+        let rawdata = fs.readFileSync('usajobs_scraped_data.json');
         let dataObj = JSON.parse(rawdata);
         res.status(200).send(dataObj);
     }

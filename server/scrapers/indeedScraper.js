@@ -21,7 +21,7 @@ module.exports = {
         if (title) {
           data.push({
             title: title,
-            link: "https://www.indeed.com" + link,
+            link: "https://www.indeed.com/" + link,
             company: company,
             location: location,
             description: description,
@@ -46,9 +46,6 @@ module.exports = {
       .catch(err => {
         console.log(err);
       });
-  
     nightmare.end();
-
   }
 };
-
