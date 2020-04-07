@@ -1,5 +1,5 @@
 import axios from "axios";
-
+import React, {useEffect, useState} from 'react'
 let initialState = {
   user: {},
   loginView: true,
@@ -12,7 +12,6 @@ const SUBMIT_USER = "SUBMIT_USER";
 const GET_SESSION = "GET_SESSION";
 const LOGOUT = "LOGOUT";
 const LOGGED_IN = 'LOGGED_IN';
-
 
 
 export function loggedIn(){
