@@ -69,7 +69,7 @@
   animation-name: drop;
   position: absolute;
   right: 0px;
-  z-index: 4;
+  z-index: 1;
   border-radius: 2px;
   animation-duration: .3s;
 }
@@ -88,13 +88,12 @@
   height: 30px;
 }
 // .menu_background_show{
-//   display: inline-block;
 //   width: 100vw;
 //   height: 100vh;
-//   background-color: transparent;
-//   z-index: 1;
+//   background-color: red;
+//   z-index: 2;
 //   position: absolute;
-//   top: 200px;
+//   margin-right: 200px;
 // }
 
 .webShow {

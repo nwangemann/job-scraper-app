@@ -41,7 +41,7 @@ function SubHeader() {
         className={toggleMenu ? "menu_background_show" : "mobile-menu-hide"}
         onClick={(e) => {
           if (e.target.className === "menu_background_show") {
-            setToggleMenu(false);
+            setToggleMenu(true);
           }
         }}
       >
