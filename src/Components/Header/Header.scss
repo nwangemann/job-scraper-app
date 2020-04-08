@@ -10,17 +10,15 @@
     justify-content: flex-start;
     position: fixed;
     top: 0;
-    width: 100%;
     margin-bottom: 20px;
   }
   .headerEnclosure{
-    width: 80%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 100px;
-
+    padding: 30px;
   }
 
 .links {
