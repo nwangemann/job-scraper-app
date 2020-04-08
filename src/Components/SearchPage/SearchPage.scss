@@ -89,3 +89,52 @@ nav {
 	font-weight: 500;
 	font-size: 18px;
 }
+
+@media screen and (max-width: 1050px) {
+	.searchText {
+	  display: none;
+	} 
+  }
+
+@media screen and (max-width: 650px) {
+	.sticky{
+		width: 100vw;
+		border-radius: 0;
+		// border-left: none;
+		// border-right: none;
+		// border-top: 6px inset $color-secondary;
+		// border-left: 6px inset $color-secondary;
+		border: none;
+		height: 20vh;
+		flex-direction: column;
+		align-items: center;
+	}
+	// .dropdownParent{
+	// 	flex-direction: column;
+	// }
+	.inputParent{
+		flex-direction: column;
+	}
+	.contentParent{
+		width: 100vw;
+		height: 20vh;
+	}
+	.searchElement{
+		margin: 5px;
+		height: 28px;
+		// border: 1px solid $color-primary;
+		border: none;
+		width: 210px;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	}
+	#jobs{
+		border: none;
+		height: 28px;
+		width: 120px;
+		box-shadow: none;
+	}
+	.searchButton{
+		box-shadow: none;
+		width: 80px;
+	}
+  }
