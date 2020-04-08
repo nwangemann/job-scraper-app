@@ -100,41 +100,32 @@ nav {
 	.sticky{
 		width: 100vw;
 		border-radius: 0;
-		// border-left: none;
-		// border-right: none;
-		// border-top: 6px inset $color-secondary;
-		// border-left: 6px inset $color-secondary;
 		border: none;
-		height: 20vh;
+		height: 13vh;
 		flex-direction: column;
 		align-items: center;
 	}
-	// .dropdownParent{
-	// 	flex-direction: column;
-	// }
-	.inputParent{
-		flex-direction: column;
+	.dropdownParent{
+		justify-content: flex-start;
+		width: 95vw;
 	}
 	.contentParent{
 		width: 100vw;
-		height: 20vh;
+		height: 13vh;
 	}
 	.searchElement{
 		margin: 5px;
 		height: 28px;
-		// border: 1px solid $color-primary;
 		border: none;
-		width: 210px;
+		width: 45vw;
 		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	}
 	#jobs{
 		border: none;
 		height: 28px;
-		width: 120px;
 		box-shadow: none;
 	}
 	.searchButton{
 		box-shadow: none;
-		width: 80px;
 	}
   }
