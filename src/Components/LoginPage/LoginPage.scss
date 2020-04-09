@@ -1,6 +1,5 @@
 @import '../../variable.scss';
 
-
 #L_Rcontainer {
     display: flex;
     flex-wrap: wrap;
@@ -34,13 +33,11 @@
     50% { opacity: 1; }
   }
 
-
 @media screen and (max-width: 700px){
  #L_Rcontainer {
      width: 80vw;
  }
  #L_Rbutton {
      margin-left: 6px;
-    //  margin-bottom:0px;
  }
 }
