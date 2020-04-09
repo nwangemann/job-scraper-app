@@ -12,6 +12,15 @@
     top: 0;
     margin-bottom: 20px;
   }
+
+  .webShow{
+    width: 25vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 30px;
+  }
   .headerEnclosure{
     width: 100vw;
     display: flex;
@@ -24,8 +33,7 @@
 .links {
     text-decoration: none;
     color: black;
-    margin-right: 20%;
-    padding-left: 5%;
+    margin-right: 50px;
     font-weight: 500;
     font-family: $font-family-Abel;
     font-size: 20px;
@@ -44,6 +52,7 @@
   height: 10vh;
   display: flex;
   align-items: center;
+  margin-left: 70px;
 }
 
 .menuButton {
@@ -101,5 +110,7 @@
 .menuButton{
   display: inline-block;
 }
-
+.titleText{
+  margin: 0;
+}
 }

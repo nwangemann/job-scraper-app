@@ -8,9 +8,38 @@
     justify-content: space-evenly;
     margin: 20px 30px;
     padding: 30px 20px;
-    height: 35vh;
+    height: auto;
     width: 55vw;
     border: 5px inset lightgrey;
     border-radius: 15px;
     background-color: $color-third;
 }
+.displayCategory{
+    font-weight: 600;
+    font-size: 18px;
+    font-family: $font-family-Abel;
+}
+.deleteButtonSaved{
+    background-color: $color-primary;
+    width: 55px;
+    height: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: $font-family-Abel;
+    color: lightgrey;
+    border-radius: 12px;
+    margin: 5px;
+}
+
+
+@media screen and (max-width: 650px) {
+	.mappedScrapeParentContainer{
+	  width: 100vw;
+    } 
+    .savedListingContainer{
+        width: 100vw;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+  }
