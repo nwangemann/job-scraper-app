@@ -47,10 +47,10 @@ app.post('/api/glassdoor', searchGlassdoor);
 app.post('/api/linkedin', searchLinkedin);
 app.post('/api/usajobs', searchUsajobs);
 
+app.get('*', (req, res)=>{
+    res.sendFile(path.join(__dirname, '../build/index.html'));
+});
 
 app.listen(SERVER_PORT, () => console.log(`Running on Server Port ${SERVER_PORT}`));
 
 
-app.get('*', (req, res)=>{
-    res.sendFile(path.join(__dirname, '../build/index.html'));
-});
