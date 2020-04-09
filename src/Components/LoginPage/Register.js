@@ -55,8 +55,9 @@ function Register() {
             That email already exists. Please register with an alternate email
           </p>
         ) : null}
-        <input type="submit" placeholder="Register" value="Register" />
+        <input id="L_Rbutton" type="submit" placeholder="Register" value="Register" />
       </form>
+
       <button onClick={() => dispatch(switchToLogin())}>Return to Login</button>
     </div>
   );

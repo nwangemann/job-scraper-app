@@ -49,8 +49,9 @@ function Login() {
           placeholder="Password"
         ></input>
         {loggedInFailed ? <p>Incorrect Email and/or Password</p> : null}
-        <input type="submit" placeholder="Login" value="Login" />
+        <input id="L_Rbutton"type="submit" placeholder="Login" value="Login" />
       </form>
+
       <button onClick={() => dispatch(switchToRegister())}>
         New User? Register
       </button>
