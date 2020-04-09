@@ -7,7 +7,7 @@ const app = express();
 const { searchUsajobs, searchLinkedin, searchZr, searchIndeed, searchDice, searchGlassdoor } = require('./Controller/scraperCtrl')
 const {getSavedListings, saveListing, deleteListing } = require('./Controller/listingCtrl')
 const {SERVER_PORT, SESSION_SECRET, CONNECTION_STRING} = process.env
-const {editPassword, editEmail, login, registerUser, logout, userSession} = require('./controller/authCtrl')
+const {editPassword, editEmail, login, registerUser, logout, userSession} = require('./Controller/authCtrl')
 
 app.use(express.json());
 
