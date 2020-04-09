@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const massive = require('massive');
 const session = require('express-session');
+const path = require('path');
 const app = express();
 const { searchUsajobs, searchLinkedin, searchZr, searchIndeed, searchDice, searchGlassdoor } = require('./Controller/scraperCtrl')
 const {getSavedListings, saveListing, deleteListing } = require('./Controller/listingCtrl')
@@ -48,3 +49,8 @@ app.post('/api/usajobs', searchUsajobs);
 
 
 app.listen(SERVER_PORT, () => console.log(`Running on Server Port ${SERVER_PORT}`));
+
+
+app.get('*', (req, res)=>{
+    res.sendFile(path.join(__dirname, '../build/index.html'));
+});
