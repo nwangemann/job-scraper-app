@@ -1,7 +1,12 @@
 [
   {
+<<<<<<< HEAD
     "title": "Javascript Developer",
     "link": "https://www.indeed.com//pagead/clk?mo=r&ad=-6NYlbfkN0DhVAxkc_TxySVbUOs6bxWYWOfhmDTNcVTjFFBAY1FXZz6G2ZVf9e4M1b8s-542xvy7NSm4Ch3CssGUyaB2aUh0uKilD6BCUaWWgcNbp_Vt7hsy9bPTgUDJH2OSpufNqiEbdjLSGvi7nk3V3fke3CdIMZi_TqkQCwikwk__5ue3E82b_x16thkCY1vxZdS818ASb7C5mOwJIXy2dtyhXtwqCfhrfGp61WJNcnqzFXW2KDLag9Wo3QoIwadyfXPb3hCCUNyisXSgOpoN_ZvNol2kL_I56B5DWQOY5E7zbdvfUClx6tuIYbElyhModO6u7zJeOrAgNKSFdcDi1FIeqPg8-55ysswGEoNg61T4MW0BSapAAmaYoh_mO42D_-bgTF6o0cMxsWZzZE3vZnrc3HXGbaVyRwx5PlR-bWBWLk9U2D5IsNu4uhxKsCEmug_IygYmAHgUMQVPyzqQ_XEIScxVBC4HEX90bEkQp0GuHsfskgtcmK56SaEXiammtHG7dVlax4iEmHm-l8bbNRri7w_cqyK1Luwu6s5MxnmlrXnzVWQAN8iIyF4Vm6RZDH2wqhZLY9n6Rib9NzYsx8P_GTvxVHUZBfJoqQohoXS2Op3-DK1lHHfcmpiz&p=0&fvj=1&vjs=3",
+=======
+    "title": "PHP Developer",
+    "link": "https://www.indeed.com//pagead/clk?mo=r&ad=-6NYlbfkN0DhVAxkc_TxySVbUOs6bxWYWOfhmDTNcVTjFFBAY1FXZz6G2ZVf9e4Mz6aUfeh0rjb94-_Lu-1OiqAaPtIa9o_Um4RnfChhxSYpdQGontTy8STfLUR1CXJMlBmIa3T8N6ns4IeQgcmX3SSqQith09ZAaq8wHcfnoqXbkg97_9L1kqxZt4ikAP1yPhzh53aNo-btbbyqDnMuXAbrVQIsvuvxgiqN9cmhe26fO_faRpV7Nzjtm7aRCLcRNfjtTFPOv0DdBJ7i7XPXytIp240h2inohGQ1bqHCnlJQCpBqG-QA49TYUOndrNFdAoVsPGsRMX3EIsT7PU6aNIKojJ2eoomIgMj2827zKQbUsjPTX2xvXgYYE-dfH_IS5yWPHYd2K7mJc9jkQH5O3DYSxtKPuvo1rCMCWXZILLLgR2dGszVVZSjyr-NYQkKqKPiJxTDhYGhbhA1ckTYlogyiA8vvundEoqxVHSPYL4gEPNlehr30EbkYtY-LZIz2Rk7rDMVNl2FKkvfacc4LQDdoxKy9fHcEA6rW_dWulgy0LoLqP5Zsu2TJZp9NCcLXiJVHDJIdXGM=&p=0&fvj=1&vjs=3",
+>>>>>>> eb9fdcc16e44da3e34aa8d3419ebe00fcd2357c6
     "company": "\nSeen by Indeed",
     "location": "Phoenix, AZ",
     "description": "",
@@ -9,6 +14,7 @@
     "website": "Indeed"
   },
   {
+<<<<<<< HEAD
     "title": "Cloud Engineer",
     "link": "https://www.indeed.com//pagead/clk?mo=r&ad=-6NYlbfkN0DhVAxkc_TxySVbUOs6bxWYWOfhmDTNcVTjFFBAY1FXZz6G2ZVf9e4MFxP11h6wbzH4dzOn4iINQnly-QaxNOJ8ulEpS99yhfQ4vJly_GCPgETsAaIdZI42GluEdYsV8Vg82c1ADRs3VcRZ2YTcgmH3AU1NpspJBexXSzjmjFMbWZPDX9yJZMfUA1GnwyxMYzmaQtZuR026doG2BL6DcKt7T-wu9yjgnawDkHmNtf72OaefK3QiNDGnRpFWfsmnjWb9HQ_z-sCuqLZHrzCcwsHO6TLT41xdyEY6PTKxMmC_omGPKcZvkeKghhRnKTpISturfVq3i5gnF0VwFXFaONYaRNaJgiNFapO26LJUHMlmLr565p5nxDSxLMJIBIr5QCRyAT07k7-djLKV6GC9k5gk4yC9gtkGrkq7m78OIRY4ZCMcDUUCPNm9dAz3fBdgI3qXPO7pBdQYrkbzhriMQjWHZ04kFtt8RUrB03F4CZH1cODx3g0ZoK1zDhLF6719huAngfMQybx1moo9yJ7NTN8jx3ifPn_rtRPImzpDVFEiYWsM7ilt-Oj8iQebdKqDWdhSAxE4mkzQ_hJ46WGi48CWLGshLZrcY8Y=&p=1&fvj=1&vjs=3",
     "company": "\nSeen by Indeed",
@@ -33,36 +39,90 @@
     "location": "Phoenix, AZ",
     "description": "",
     "date": "12 days ago",
-    "website": "Indeed"
-  },
-  {
-    "title": "Software Support Engineer",
-    "link": "https://www.indeed.com//company/Soaren-Management/jobs/Software-Support-Engineer-b04c7e1f833a8ef4?fccid=f655b63832cd2f25&vjs=3",
-    "company": "\n\nSoaren Management",
+=======
+    "title": "Web Developer",
+    "link": "https://www.indeed.com//pagead/clk?mo=r&ad=-6NYlbfkN0Ag7WhxEhDkUCnHoeTDPatldzbU9kfEihgVMj5eCQXLB-wPgzqV762FozyaIh4dur8qBQIGaiRGYqKvjEIjUF__gKXndZzirRZt38VbsDNtb_JMOi_DQgbWFDSBi3w2HH4htZVLhnFWEtc84WaBNIIKJzWEt5eWKNyqfQfXyrcqkcNBHFh9ZmI4T-SEKTrei4CHUlC7ssIuO3VVJ0u3MwlKplf6mnUtLU2olXMKzvsqvgs70iy94CPW6xpf8aRwOxNHwedBGbYaHF_gM0wt6F7MDP5C6Nf1D6sydfnOBI_-0vU-O-FFXCk9h_wtXZff7EM3kDgJhY4KALEZinj0pX53AU1H1E-iavnRCY4EAgRv2vBN-8OZxYy-FIMIC1q1kLz8_2E5zIMXxDTIuyWPhujsC0xRizSS_C6-pS7TaVim13wndzVLt_6hu1IAh7BEiZY=&p=1&fvj=1&vjs=3",
+    "company": "\nASR Analytics, LLC",
     "location": "Phoenix, AZ",
-    "description": "JIRA or similar project management software.Twillio or similar communication platform experience.Bachelor’s degree in Computer Science or similar or…",
-    "date": "1 day ago",
-    "website": "Indeed"
-  },
-  {
-    "title": "Jr. Software Engineer",
-    "link": "https://www.indeed.com//rc/clk?jk=411471e56007d47e&fccid=fe2d21eef233e94a&vjs=3",
-    "company": "\n\nAmazon.com Services LLC",
-    "location": "Goodyear, AZ",
-    "description": "We offer great opportunities to work on access control, machine learning, IoT and high-scale, low-latency distributed systems.",
+    "description": "This position offers highly competitive compensation (commensurate with experience), and flexibility to work as an independent contractor or an employee (with…",
     "date": "30+ days ago",
     "website": "Indeed"
   },
   {
-    "title": "Junior Software Engineer",
-    "link": "https://www.indeed.com//rc/clk?jk=0946b747f8d94cd8&fccid=c5ea4e7966fbedd1&vjs=3",
-    "company": "\nVanlo",
-    "location": "Scottsdale, AZ",
-    "description": "2+ years of professional software development experience.Build new features and products for the Vanlo.Optimize and build back-end services for performance…",
+    "title": "Front End Developer (Entry level)",
+    "link": "https://www.indeed.com//pagead/clk?mo=r&ad=-6NYlbfkN0BbIbu35rN4ToQZZxETN3tZlg0cK7iFEHC0AqmvhRxc6_RiK6STRcYZVI9PqIA_L-_XfoMiDIgStf6ugsZGdzwgt2ZgRpmRPCDlULpUqzlr_P3AavaBIV-J9hbhJm8SCdroAt1psJqHzFvoW54QSbtzOGJNlDoCzinco3_0ZreFRYRMCddXZF_FWWFWnzbNqdN6I-GBkODrR-uCd9Y332OFiN8vh1fKiBAmyW0Ti5edcbNTS9gvEPbIhU1zve7PGw26D6FKD7-_dajP0pTf5_dg8VYdOWm4a3Gg_j_KXriDMiQU210pwf8vKZIot57Y0btx48JEg4i-wYPeUezdS14G94tKJ4O6JclIq-QU3WKHFgIuB3R7bKPhI3qBdV2kc8BTPoMqKX-lCcUHmjPqS9ROtx0g4EhNf63d7gHlk3KEWAZiv-Tl2kE4awfxjjsE_6DHquRG56KJ6TRVv9Xu_1zOqLAiYaERRS_pP1EOVdpEFRgz4mRSUzpXfG_oHAkqspTMqFPqIDmMfFkRqGz9eutRHLpQ4POAMaTzYQsbqPig9FFsbiMS-h8PbPyybbWr5dm-3a2_GjlzqxmfnjLaUhChp1wmMbHKVuwE5T2ZolDbXKhTE2MBT59t-eKg2p6DA9EIE4fc5OezXO8_zrwgbSyJ1uQsGh8BJxNh6ED7sBJysWowzkvajjVTSJzSTq5t-mZj4GnlI5TCpmq2vE73Qx9zyPFW5cEU13LqdDRNKXRUm4QN7CO56Yneudxr7v7owh3m4OcrNGizsVt_cNinJ72mmWfZsNkEriurgb0UBGePcM7cZs1uozgBhvAiaEAOhdgwFYcAUdv5r8dGbmVZ52vbrIn40wf33ofPAyE5F8xpUVnxDmEhlrPKoVh-H_Q1ftYt0jde6nQmXXVwSU1neWI1jZVmIlNYT0sbha2h_co3SY8u5xc9aXX5TQ5-8l4Hpu8HZTv_qZ5aqFrEdPUDhGK5&p=2&fvj=0&vjs=3",
+    "company": "\n\nRevature",
+    "location": "Phoenix, AZ",
+    "description": "College degree (Associates or Bachelors).Must be authorized to work in the US.Strong desire to learn to code – No prior professional experience required.",
+    "date": "30+ days ago",
+    "website": "Indeed"
+  },
+  {
+    "title": "Jr. PHP Developer",
+    "link": "https://www.indeed.com//pagead/clk?mo=r&ad=-6NYlbfkN0AYo_ysEmi-N9D-g6x4hDoxwWbDzILIh7p3iecCghkOgCCQ9Hjx-p_46PTVF05XzNNtAFc7uRxiVD1eCh6UnIXPV_R1pND3AyvRzajlwCi6kMr4mK6b9wxCoY42QWInLs5JMX7TJC-LRR8eZQQ2w4ZoB42OlvvyN6LzZ0WjqwyrfNlUiEnuzQZrYYBdOfRWYDFAB6z8zZRqKpyO1lIPkgBWDrdc23cbX6I1oshs0tdOlfCA_1YRBavZKQcshePbQrM-Zv5rJGyXMvVsG12dh1QOP4cOLN1wOXrqEx7nMk56BsjAfQt5c0njoly2htkOc1RJDWcy4HXvXzk-1BUU-whLFadjCMkTGYDhl5NRN4XroOwjnmz7zlCdCQ-CQLn2DJPrT1016nB0b1ru-j5Rd8Cy01rJEJuLu6ThK6rkZZi96iGCY6dF3aBrYu2kLdNuMg2atvVmn3xnr2sI3rxdyb8n&p=3&fvj=1&vjs=3",
+    "company": "\nThe Finders",
+    "location": "Phoenix, AZ",
+    "description": "Company-sponsored medical/dental/vision/life insurance/AD&D.Start-up company atmosphere with an established corporate structure.One day remote per week!",
+    "date": "8 days ago",
+    "website": "Indeed"
+  },
+  {
+    "title": "Full Stack Developer",
+    "link": "https://www.indeed.com//pagead/clk?mo=r&ad=-6NYlbfkN0AOgUYMXYjtK0ytBgC6KDADm6Cwf4AsCw-k09FdSpyvzBf12VywAPzpReTPfBwxvPjrlHvEgVlcZny6xPKwRxHePvquWhU6J3dh2mJRz7NifPBdWp8arhY_c7Mwkgp7Jr-pWwVR8Lw1l5h2jY-9__ERuJV5ArW_v8j8sVewWB3qz-A1J7oVbvQdY50IRXIL8iioBHPIadm_CeTUTK8tjdqdxMSobGBkHtwCkf3_Ru_5OriCsUsraQcXzZbyUlS-Pmi-ZsJanWbPNmgkhVkY2Rn8yXPYe6GYiCBYeJ5T72D6_BtfZSU_pO4exSgVo1bx8evQ9A7EzLUIjxG6d8o6NzICeyn2QqAt-smrgrXROj212QknvL5KD9eb3egiEdKvsBHsAjghOjQdyh9VJSvIMQI_tChdSX-eyRmmB1lt1qnVrHPL-WmL95ftJKUYUz1W1xVt_tQWqe1hjg==&p=4&fvj=1&vjs=3",
+    "company": "\n\nArizona Regional Multiple Listing Service",
+    "location": "Tempe, AZ",
+    "description": "The ideal candidate will have experience developing full-stack web applications using Angular 2+, ASP.NET (4.6.1 and Core 2+), and SQL Server.",
+    "date": "16 days ago",
+    "website": "Indeed"
+  },
+  {
+    "title": "Software QA Engineer",
+    "link": "https://www.indeed.com//pagead/clk?mo=r&ad=-6NYlbfkN0DjrynpsYjobgFt126pqx41ySSvUR543Wq1FlUKPP4I-KctqrvSkOIRC6RfsSxj9G0EfI71nbC0O_CPYl06g8Qy8ACu0zFq1JqDdKBzHv5qipNZHeOkHek1aSTfi8r-7Xh_ocFOJtRwwsW1fn4PqtzfrHK5CXGeerrVURMbONuUSsh3l69yYkKSRJq5Lx7g8uIH6_YSkMp5fmrcJwL3gVV4A_XaIpcsFKSakQYAHESorfAootct8OcWLKw-e_gFGsbItKbEkCoT03WieQdq9ZcvHhhWq0ewuSXC8emY5rZuGqFlveHqPjAzwaNxgMmL2Nbx8lpTBTv8rrgjinuF1g-PMyExRpbud-dDy79YdyQFdYpWN5nVRmRkq-bAkRLYZ4VMiaDWhoEi8ZWJ6UTfe_V8PLVPP4Zsr4sNbdTCzyVkdDSQle7rOHaGOStnLm52sPbg4XM8DpO47dID1hkXu6jU&p=5&fvj=1&vjs=3",
+    "company": "\n\nCentauri Health Solutions",
+    "location": "United States",
+    "description": "Our tailored solutions enable health plans and hospitals to manage variable revenue, through a custom-built workflow platform, which seamlessly integrates cross…",
+    "date": "Just posted",
+    "website": "Indeed"
+  },
+  {
+    "title": "Entry Level - Software Developer",
+    "link": "https://www.indeed.com//pagead/clk?mo=r&ad=-6NYlbfkN0ChdE_-3s9UeG5xYsqO3th9AddXeBq2OieSfAM8evhI-PZ76-Buf7EcnCv0gKKLndR0YEV2kTxuAD_VKH6HEbZFGsVNkpiitjOp_daSiXpE3Pd_X3qe-bekUwRlgzVovAcCBt0z5yUU5xFBeE38vP8NN1cwM2zQW5_7-qCme8EqinLhZmejl_OVcu1aTxEOcaquMjCMZMVbZV-HxEZ14Hcz7k85a8blVGp4sCs7zgF_J_NZqu1-gN_OMHY10LlR9J2ijyZHAK_oLCZKFePgqg1FDiULoBWk8aSELh7iZ65hjuHXrWH_TbhTEu6M2el7UJVpXVOzwShhVPZsvlvKp6qoHFml8i3P5HnkdyvAfClUTG8O38_E5FfSsX1DQapD8fHg-nluGDS9t4hDCbYOf41qo7cpHfZh8eI2SvUeuZE4ZY8hVOdUHZj3zb-yB4Mx3DHKh1SVIyWtfQ==&p=6&fvj=1&vjs=3",
+    "company": "\nSmoothstack",
+    "location": "United States",
+    "description": "Bachelor’s degree or minor in any of the following: Computer Science, Engineering, Statistics, Mathematics or Economics or equivalent training or course work…",
+    "date": "30+ days ago",
+>>>>>>> eb9fdcc16e44da3e34aa8d3419ebe00fcd2357c6
+    "website": "Indeed"
+  },
+  {
+    "title": "Web Designer/Developer",
+    "link": "https://www.indeed.com//company/Medical-Laboratory-Service/jobs/Web-Designer-Developer-fff6f84f297e4b7d?fccid=dfb60fa99e9cf4e6&vjs=3",
+    "company": "\nMedical Labs, LLC",
+    "location": "Phoenix, AZ",
+    "description": "Labrad Diagnostics is seeking a full-time front-end web designer for our web department.The ideal candidate will be a skilled designer with a keen…",
+    "date": "11 days ago",
+    "website": "Indeed"
+  },
+  {
+    "title": "Full Stack Web Developer",
+    "link": "https://www.indeed.com//rc/clk?jk=52c20fc6dd667cdb&fccid=dd616958bd9ddc12&vjs=3",
+    "company": "\nPerformance",
+    "location": "Phoenix, AZ",
+    "description": "At Performance we are looking for passionate Full Stack Web developers to design, develop and install software solutions for state-of-the-art safety critical…",
+    "date": "Today",
+    "website": "Indeed"
+  },
+  {
+    "title": "Web Developer",
+    "link": "https://www.indeed.com//company/Gardensprings,-LLC/jobs/Web-Developer-7c6cead6bff4a184?fccid=2c6e270f7806c757&vjs=3",
+    "company": "\nNatural Skincare Company",
+    "location": "Mesa, AZ",
+    "description": "Must be very organized and have excellent design skills.Web development: 3 years (Preferred).Software development: 3 years (Preferred).",
     "date": "2 days ago",
     "website": "Indeed"
   },
   {
+<<<<<<< HEAD
     "title": "CSLA and C# Software Developer",
     "link": "https://www.indeed.com//company/JusticeTrax/jobs/Csla-Csharp-Software-Developer-2a3d3995afd9fdc5?fccid=3ac8d678d2e5dbb2&vjs=3",
     "company": "\nJusticeTrax",
@@ -77,28 +137,45 @@
     "company": "\n\nNortonLifeLock",
     "location": "Tempe, AZ",
     "description": "In the Norton Engineering team you will develop products that will fight cybercrime worldwide and protects our customers' data and identities by developing…",
+=======
+    "title": "Web Developer",
+    "link": "https://www.indeed.com//rc/clk?jk=54a2a910200f2bd9&fccid=2f09bbb6d3584271&vjs=3",
+    "company": "\nBarron Lighting Group I",
+    "location": "Glendale, AZ",
+    "description": "Design and develop website features, functionality, enhancements, and modifications.Manage, troubleshoot, and maintain multiple websites and complex web-based…",
+>>>>>>> eb9fdcc16e44da3e34aa8d3419ebe00fcd2357c6
     "date": "1 day ago",
     "website": "Indeed"
   },
   {
+<<<<<<< HEAD
     "title": "Engineer (OMS)",
     "link": "https://www.indeed.com//rc/clk?jk=ecc987419ca32c2a&fccid=98d3ef9c180e48f0&vjs=3",
     "company": "\n\nLeslie's Poolmart",
     "location": "Phoenix, AZ",
     "description": "Understand the businesses functional, technical and process needs to design and develop solutions to meet business expectations.",
     "date": "Today",
+=======
+    "title": "Web Developer",
+    "link": "https://www.indeed.com//company/The-Dealer's-Choice/jobs/Web-Developer-c0c1267b153819af?fccid=b6e52c5d5ed522d7&vjs=3",
+    "company": "\nTDC Group",
+    "location": "Phoenix, AZ",
+    "description": "_We are looking for someone who is familiar with maintaining/creating Ruby/Ruby on Rails Web Applications.An individual having some knowledge in Ruby, Ruby on…",
+    "date": "5 days ago",
+>>>>>>> eb9fdcc16e44da3e34aa8d3419ebe00fcd2357c6
     "website": "Indeed"
   },
   {
-    "title": "Software Development Engineer",
-    "link": "https://www.indeed.com//rc/clk?jk=d63a4f81836f2b31&fccid=2f09bbb6d3584271&vjs=3",
-    "company": "\nBarron Lighting Group I",
-    "location": "Glendale, AZ",
-    "description": "Mid-level full stack .net developer with 2+ years of experience concentrating on front end skills.Design hardware to support new software.",
-    "date": "Today",
+    "title": "Web Applications Developer III",
+    "link": "https://www.indeed.com//rc/clk?jk=71d45ddc85453bf8&fccid=3c6ecfeeb148058b&vjs=3",
+    "company": "\nSwitchThink Solutions LLC",
+    "location": "Phoenix, AZ",
+    "description": "You're an analytical and creative problem solver who has built a career developing, implementing, and maintaining web-based systems.",
+    "date": "1 day ago",
     "website": "Indeed"
   },
   {
+<<<<<<< HEAD
     "title": "Paid Cyber Security Intern, Part-Time (AZ residents only)",
     "link": "https://www.indeed.com//rc/clk?cmp=CyberForce%7CQ&ti=Paid+Cyber+Security+Intern&jk=4fe6d0fc99397f70&fccid=a3db845af7f3ea62&vjs=3",
     "company": "\n\nCyberForce|Q",
@@ -147,12 +224,54 @@
     "title": ".NET Developer",
     "link": "https://www.indeed.com//pagead/clk?mo=r&ad=-6NYlbfkN0DhVAxkc_TxySVbUOs6bxWYWOfhmDTNcVTjFFBAY1FXZz6G2ZVf9e4MJ1MBp1timRxmVvO06ynMsz456L0qSXC-KC_RpvnVMSzIFZLzsMaCFX21tiwD4tIJxrAvQGyqItlxknegi8-ntxOnRIMxASpqpMThb1FdSlmioF1Us3O7uqJZmaBgbciDbUJwqZUZwiV-6a3LBGshlY7DQorq8hGIq5wmT7N4jEXd8wosJKTGmOgzRSwVCJp5r1nuXIFys9pCu5jZCPao_p_3KGUSetFSt2kiZcDmcKfQC5sqYpPrU938w_784a2CDeGcBnU0ukkx6zNrBQQAzu5zqlcJE09qC7Ua95pDKCRVpIuqXX7gZ5R_XH1JLL0U5l4LWRLV3EmJn5a0hfQCkhElQeNJkC1mALNupRx2IqI9WKP8VLJmlMuyN_wStCmGTE_qF96TVoYPQB0dr7Ta9I8Gip1vHkA9Mf4ZVlY_7igGe0xurJZUUwD8rDH_hBdERJEzOMuHd9_ev7iuTF0p50HrVrovqXh29s3EAYcKv6V7Znmnr0NBc_imP1r5rHEeqhRI2eEM3PSIXNva3B5AQjeUmSveuZls&p=16&fvj=1&vjs=3",
     "company": "\nSeen by Indeed",
+=======
+    "title": "Web Applications Developer III",
+    "link": "https://www.indeed.com//rc/clk?jk=5c10f52f0e1c8ab5&fccid=77e657edd60098da&vjs=3",
+    "company": "\n\nDesert Financial Credit Union",
     "location": "Phoenix, AZ",
-    "description": "",
-    "date": "12 days ago",
+    "description": "You're an analytical and creative problem solver who has built a career developing, implementing, and maintaining web-based systems.",
+    "date": "1 day ago",
     "website": "Indeed"
   },
   {
+    "title": "Web Developer",
+    "link": "https://www.indeed.com//company/Your-Resume-Charm/jobs/Web-Developer-21a1b728e5d42aab?fccid=d24902d8f8a52a44&vjs=3",
+    "company": "\nYour Resume Charm",
+    "location": "Scottsdale, AZ",
+    "description": "Clearly, you will be remote when you first start, so you have to be OK with being independent.Build, enhance, and support websites and applications hosted in…",
+    "date": "18 days ago",
+    "website": "Indeed"
+  },
+  {
+    "title": "CSLA and C# Software Developer",
+    "link": "https://www.indeed.com//company/JusticeTrax/jobs/Csla-Csharp-Software-Developer-2a3d3995afd9fdc5?fccid=3ac8d678d2e5dbb2&vjs=3",
+    "company": "\nJusticeTrax",
+    "location": "Mesa, AZ",
+    "description": "The basic function of the Software Developer is to participate in a team to develop high quality architecture, code, user interfaces and appropriate…",
+    "date": "Just posted",
+    "website": "Indeed"
+  },
+  {
+    "title": "React JS Developer needed for contract project",
+    "link": "https://www.indeed.com//company/eChazen-Internet-Solutions,-LLC/jobs/React-Js-Developer-Contract-Project-acf29bdc7e3c3e56?fccid=1c476aa678bb013c&vjs=3",
+    "company": "\nGilbertYouthSports.org",
+    "location": "Gilbert, AZ",
+    "description": "You will develop and implement unique web-based applications.Add 3 major milestones of additions to the project.Create back-end code and interface.",
+    "date": "10 days ago",
+    "website": "Indeed"
+  },
+  {
+    "title": "Web Developer - Local AZ Hires ONLY",
+    "link": "https://www.indeed.com//pagead/clk?mo=r&ad=-6NYlbfkN0DOB9GKcKQPbll6gDQbDqcqnNI1lu2uJ9v1nXXHZCywK9pkI7iUICB6vUUkJBN88nQMWSFZr0E6xcT0-VDnwe_1mks7cU8eWw3dUnszkJ_KTj7GRTwZJ6U9V7rIJJhIwOaMe4mlMgvR7O8L3UG63-9E9ogt8pAkmMrN-87J2VhfKTbiQl-y3BEDSlHQY7XzWq3C4oblv9V87t9l_9lh0uSmn2YLtKdbwtftuwjcXdyyET3V90e8SaOZdwhZZZF9RHdgGE57k4TYsLOSOgYU5pzBoiX_lF_jZS9tcq2rrlWqwgAZdapbMLUIUZqBaQsdmRJH7tP7L6TDkBRVetzfQD5gOqWx3SrceGhrCtY2e_L4Dh02TXbFKacod7oRlM_0O0AtgYfzptIc9p63xn5FUvydQUBxPpfTxlFXtbrNDqVWnQlZ_AojsqVKLYcVepOuIUrd4cec6-7xwhXOjVt5ynwFAvDGXS_PvIWulaQj1jKECHZSbNNEw95wGeueAQmGKYMxdL89l8tBJvyTnS9bCXy2xG3q39QfSuU=&p=17&fvj=0&vjs=3",
+    "company": "\n\nTravelliance, Inc.",
+>>>>>>> eb9fdcc16e44da3e34aa8d3419ebe00fcd2357c6
+    "location": "Phoenix, AZ",
+    "description": "The Web Application Developer position is responsible for designing, creating, and supporting web applications that take into consideration all aspects of…",
+    "date": "30+ days ago",
+    "website": "Indeed"
+  },
+  {
+<<<<<<< HEAD
     "title": "Sr. Software Engineer",
     "link": "https://www.indeed.com//pagead/clk?mo=r&ad=-6NYlbfkN0BKs1RYZ2L5j_dFZo0L0qxyiLc1ECj9gLdEKOjRXCz20dbTrSYqgOUx5Js2ihxn-AqqveuCMAZEOkoycecJPhQ4ENs_9MhqtGDzHz_ZQBhqUK7ZKDNSh70DbgwG12rFcvLKcDv5C6c_b0JB-Sf7hs7GnnUkXC-euwGNWgC-0uTzPxD37saXhuIxqxVH_tmbduC-2kR4K0t9XYTzp0_OC68boCdBSoY9gOtvf2BaPJkJTy5zodwlmwUSIoDg-ycy8lKRAP9A81L852raUEGfOdy4PehHsjfIJyq8E3I4JHY1p_rJgEuJOm_oirJYlwdvaC-jMOstcGWqrr59JXjSaXpGsZUdFkFZlbe_6DYTCvAmKi44El11YxeaC3gF3Fovont4DnBbV7r8FHzi1cKrUBfjgXzh3We8gcNuazUZVhFOs7Aaf9fI-gfHemOXupYVoJbX_8cXFmYdMsnLyV2HaAhjvcwRJPp_jUfaPaPCy3yNqlc5X9I8vRuLuR_hFxyRY52_YS-sdHUnLRRMwHgF2zZnXY97x43V4DzEG5MQ8DM0bfA0_Y2O0VmGjZYpFfw9uWS0FG81KVYldxIVktbbqBTfXxdbFn66AOCxAGuQrxGdfQmkKMzLvQtm8J0E43Mc04UMqrkpW7qbP0geHNblyXKQtP0pb1Ze6KmCjfcWxyQLPf4R58pg8YI2F2l-ij4KoaZb9ofW-xuGJaM2ID2G2_7wthCOp2YGWMJPdHrgqUDHaUxbJAUsvBu-ZabcK52Pwn7N8Fbg-qFJGTWrTjU285zzy2YWfoK7EY1DBVhpYryE5A==&p=17&fvj=1&vjs=3",
     "company": "\n\nASM",
@@ -164,6 +283,10 @@
   {
     "title": "DevOps Engineer",
     "link": "https://www.indeed.com//pagead/clk?mo=r&ad=-6NYlbfkN0DhVAxkc_TxySVbUOs6bxWYWOfhmDTNcVTjFFBAY1FXZz6G2ZVf9e4M93fek-VSHwZHr11-SWJzti3SqL_5eem2h7Wdk5MHp-OLH7jyRk7s_WewLIKWaz3RiOLK-ky373zhFyFA0O0MaexUP0p-nfVlaWct-B6ImWir6kACmCF8F4fQC_4cT_shcf_YiN6tt_0-5KO6MMwIoBBzxxVGy3CmObOuWF4VGa8xTwWDaXt4D9oIbb7YEsyz143TRL3173b61NS82-4yW6nGZk-8cQ8Hs-IIEblpLepckp0xXerpY_V6uB0cr7DupWvJvHqZbKxDCilYsggBidik4-TtRcclWvw85X1HKNnMNm8MjMooBXaofI8YCb_V5JcEEwkaKxuqQDLnhjJ43bkCU2zP70IJGxkfOh6kOdBOHZNaCSmKMF-9_3ewYoEH-ceNQ2JkNvDEtZ_7WBWx1JGj4FApoCDGNl4Z-GDwboCehn9tF4UVJVhz-MDqZwTwsGlQgfz5E3-WFMRro7xrTulX-hRohxagTHtwJJM3K7OH47qNF7YlDHXnc1xTNRuELxgd9sNm0SnLd5szzZglHcrYNK-xhj-N&p=18&fvj=1&vjs=3",
+=======
+    "title": "Front End Developer",
+    "link": "https://www.indeed.com//pagead/clk?mo=r&ad=-6NYlbfkN0DhVAxkc_TxySVbUOs6bxWYWOfhmDTNcVTjFFBAY1FXZz6G2ZVf9e4MxsTvP1mylMqNo_9bCDNMDvG_P-vB1hPZ8cxokar4GG2M8Vphc6yzUIWodQ6LJsfJ8o7xoq7QN0lH3B12l31ZM2pL6JnRAQRVojJlcI84r_6cEKAE2L5r-YSSZwogk5DdqhWWJb0zp84Cb6I8p0OLmjonmG4cMZlur6IOhs-Wbk77mPBfEh6YvRzW4O1cc3u03T0G7di9oqoNrAg0gv_Z3fPRznozLyIdDkzeMz27k7ReGJ2jbzz_EfLYI6_uKF1FbkPJ7JMbF_w1gaxwwCLbAsEAc3OOhuEfNuW1f3HHGgy2mbV8Mp2S35jAkMUD0R5didNdzrjL2iURoOf7Nz6Urj7Eg5ot9XzfNjm6dYzt58nknjRVIpbLRUGhQnWoH5hrAq8zgXgxkl4w1CKmJwriJ6dpgzp-hMQqoOhUqBDY7HtGKUQiinJ-noYhZWGXJczHIQdQrRoJhlzJ0OP_7zSDYlwqsj1lvgbLE0GXHhUeEqn6_iz3CLSqhcpi6SybCoinH6dmOttBFk6MpZ5xKQtsIQ8BCxJU7BBfasGI58p5fcQlH2GziibsBNFHYNEmCTRYEBOzdGdtkkw=&p=18&fvj=1&vjs=3",
+>>>>>>> eb9fdcc16e44da3e34aa8d3419ebe00fcd2357c6
     "company": "\nSeen by Indeed",
     "location": "Phoenix, AZ",
     "description": "",

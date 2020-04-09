@@ -24,6 +24,11 @@
     overflow: scroll;
     margin-top: 2vh;
 }
+.displayCategory{
+    font-weight: 600;
+    font-size: 18px;
+    font-family: $font-family-Abel;
+}
 
 #successMessage{
     font-weight: 600;
@@ -33,6 +38,18 @@
 
 .jobTitle {
     color: $color-primary
+}
+
+.saveButton{
+    background-color: $color-primary;
+    width: 55px;
+    height: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: $font-family-Abel;
+    color: lightgrey;
+    border-radius: 15px;
+    margin: 5px;
 }
 
 @media screen and (max-width: 650px) {
@@ -47,16 +64,5 @@
         font-weight: 600;
         font-size: 18px;
         font-family: $font-family-Abel;
-    }
-    .saveButton{
-        background-color: $color-primary;
-        width: 55px;
-        height: 25px;
-        font-size: 16px;
-        font-weight: 600;
-        font-family: $font-family-Abel;
-        color: $color-third;
-        border-radius: 15px;
-        margin: 5px;
     }
   }

@@ -76,7 +76,7 @@ function AccountPage() {
         </div>
 
         <div className="formDiv">
-          <div>
+          <div className="formHousing">
             <form
               className="emailForm"
               onSubmit={e => {
@@ -99,7 +99,7 @@ function AccountPage() {
               />
             </form>
           </div>
-          <div>
+          <div className="formHousing">
             <form
               className="passwordForm"
               onSubmit={e => {
