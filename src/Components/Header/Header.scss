@@ -72,7 +72,6 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
-  // background-color: #36454F;
   animation-name: drop;
   position: absolute;
   right: 0px;
@@ -94,15 +93,6 @@
   width: 30px;
   height: 30px;
 }
-// .menu_background_show{
-//   width: 100vw;
-//   height: 100vh;
-//   background-color: red;
-//   z-index: 2;
-//   position: absolute;
-//   margin-right: 200px;
-// }
-
 .webShow {
   display: none;
 }

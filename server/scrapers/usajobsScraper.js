@@ -17,7 +17,6 @@ module.exports = {
           let description = $(raw_element).find("li.usajobs-search-result--core__item").text();
           let date = $(raw_element).find("p.usajobs-search-result--core__closing-date").text();
   
-        //   console.log('data', title)
           if (title) {
             data.push({
               title: title,
@@ -38,7 +37,6 @@ module.exports = {
         .evaluate(() => document.querySelector("body").innerHTML)
         .end()
         .then(async response => {
-            // console.log('response', response)
           let result = await getData(response);
             console.log('usajobs', result)
           let dataStep = JSON.stringify(result, null, 2)
