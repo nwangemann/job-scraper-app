@@ -41,10 +41,10 @@
 
 .searchElement{
 	border: 1px solid $color-primary;
-	height: 25px;
+	height: 28px;
 	border-radius: 5px;
 	font-family: $font-family-Abel;
-	font-size: 15px;
+	font-size: 20px;
 	padding-left: 5px;
 }
 
@@ -53,8 +53,9 @@
 	color: $color-secondary;
 	background-color: $color-primary;
 	border: 1px solid $color-secondary;
-	font-size: 15px;
+	font-size: 20px;
 	height: 35px;
+	width: 80px;
 	font-weight: 600;
 }
 
@@ -85,7 +86,7 @@ nav {
 	font-family: $font-family-Abel;
 	margin: 0px 10px;
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 20px;
 }
 
 @media screen and (max-width: 1050px) {

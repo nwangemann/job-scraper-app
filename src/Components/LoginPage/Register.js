@@ -33,6 +33,7 @@ function Register() {
     <div id="L_Rcontainer">
       <p id="Title">Register Now</p>
       <form
+        className="L_Rform"
         onSubmit={e => {
           e.preventDefault();
           registerSubmit(email, password);

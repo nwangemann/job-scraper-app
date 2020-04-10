@@ -30,7 +30,7 @@ function Login() {
     <div className="accountContainer" id="L_Rcontainer">
       
       <p id="Title">Login</p>
-      <form
+      <form className="L_Rform"
         onSubmit={e => {
           e.preventDefault();
           loginSubmit(email, password);

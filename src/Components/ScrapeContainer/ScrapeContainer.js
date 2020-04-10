@@ -39,10 +39,10 @@ function ScrapeContainer(props) {
     return (
       <div key={i} className="listingContainer">
         <a className="jobTitle" id="Title" href={elem.link}>{elem.title}</a>
-        <h5><span className="displayCategory">Company</span>: {elem.company}</h5>
-        <h5><span className="displayCategory">Location</span>: {elem.location}</h5>
-        <h5><span className="displayCategory">Description</span>: {elem.description}</h5>
-        <h5>{elem.date}</h5>
+        <h5 className="scrapeContent"><span className="displayCategory">Company</span>: {elem.company}</h5>
+        <h5 className="scrapeContent"><span className="displayCategory">Location</span>: {elem.location}</h5>
+        <h5 className="scrapeContent"><span className="displayCategory">Description</span>: {elem.description}</h5>
+        <h5 className="scrapeContent">{elem.date}</h5>
         {isLoggedIn ? (
           <button
             onClick={save}
