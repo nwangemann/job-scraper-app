@@ -41,9 +41,16 @@
 
 @media screen and (max-width: 700px){
  #L_Rcontainer {
-     width: 80vw;
+     width: 90vw;
  }
  #L_Rbutton {
      margin-left: 6px;
+ }
+ .L_Rform {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     height: 10vh;
  }
 }
