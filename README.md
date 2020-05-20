@@ -4,9 +4,9 @@
 
 ## Main Page- Enter job title and location to search for job listings from the selected website
 ![UI](./public/s1.png?raw=true "Screen shot")
-## Main Page- Enter job title and location to search for job listings from the selected website
+## Saved Jobs Page- View saved job listings, click the link to launch the direct url listing
 ![UI](./public/s2.png?raw=true "Screen shot")
-## Main Page- Enter job title and location to search for job listings from the selected website
+## Example of a clicked link
 ![UI](./public/s3.png?raw=true "Screen shot")
 ## Main Page- Enter job title and location to search for job listings from the selected website
 ![UI](./public/s4.png?raw=true "Screen shot")
