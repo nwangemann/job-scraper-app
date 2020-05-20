@@ -1,6 +1,9 @@
 # **Group Project**
 
-## Job Scraper
+## Get Busy- Job Scraper
+
+## Main Page- Enter job title and location to search for job listings from the selected website
+![UI](./public/Screen Shot 2020-05-19 at 5.28.42 PM.png?raw=true "Screen shot")
 
 <ul>
 MVP (minimum viable product):
