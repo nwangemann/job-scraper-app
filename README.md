@@ -2,15 +2,15 @@
 
 ## Get Busy- Job Scraper
 
-## Main Page- Enter job title and location to search for job listings from the selected website
+## Main Page- Job listing data can be dynamically scraped using job title and location, pulling data from selected website
 ![UI](./public/s1.png?raw=true "Screen shot")
 ## Saved Jobs Page- View saved job listings, click the link to launch the direct url listing
 ![UI](./public/s2.png?raw=true "Screen shot")
 ## Example of a clicked link
 ![UI](./public/s3.png?raw=true "Screen shot")
-## Main Page- Enter job title and location to search for job listings from the selected website
+## Account Page- Edit account details
 ![UI](./public/s4.png?raw=true "Screen shot")
-## Main Page- Enter job title and location to search for job listings from the selected website
+## Main Page- Multiple websites are available for data to be scraped from
 ![UI](./public/s5.png?raw=true "Screen shot")
 
 <ul>
