@@ -3,7 +3,15 @@
 ## Get Busy- Job Scraper
 
 ## Main Page- Enter job title and location to search for job listings from the selected website
-![UI](./public/Screen Shot 2020-05-19 at 5.28.42 PM.png?raw=true "Screen shot")
+![UI](./public/s1.png?raw=true "Screen shot")
+## Main Page- Enter job title and location to search for job listings from the selected website
+![UI](./public/s2.png?raw=true "Screen shot")
+## Main Page- Enter job title and location to search for job listings from the selected website
+![UI](./public/s3.png?raw=true "Screen shot")
+## Main Page- Enter job title and location to search for job listings from the selected website
+![UI](./public/s4.png?raw=true "Screen shot")
+## Main Page- Enter job title and location to search for job listings from the selected website
+![UI](./public/s5.png?raw=true "Screen shot")
 
 <ul>
 MVP (minimum viable product):
